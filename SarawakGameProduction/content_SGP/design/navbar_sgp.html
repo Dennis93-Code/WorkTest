@@ -1,0 +1,33 @@
+<!Doctype html>
+<html lang="en">
+    {% load static %}
+    <head>
+        {% comment %} this is for main css involved but would be under css_source.html linked with this one for navigation {% endcomment %}
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="{% static 'stylesheet_sgp.css' %}">
+    </head>
+    <body>
+        {% comment %} main navigation bar {% endcomment %}
+        <div style="width: 100%; background: #333; padding: 10px; color: white; display: flex; justify-content: space-between; align-items: center;">
+            <!-- Left Section: Logo -->
+            <div>
+                <h2 style="margin: 0; padding-left: 15px;">SGP Game Hub</h2>
+            </div>
+        
+            <!-- Middle Section: Navigation Links -->
+            <div>
+                <a href="{% url 'mainpage' %}" style="color: white; text-decoration: none; margin: 0 15px;">Home</a>
+                <a href="{% url 'topup' %}" style="color: white; text-decoration: none; margin: 0 15px;">Top Up</a>
+                <a href="{% url 'profile' %}" style="color: white; text-decoration: none; margin: 0 15px;">Profile</a>
+                <a href="{% url 'settings' %}" style="color: white; text-decoration: none; margin: 0 15px;">Settings</a>
+            </div>
+        
+            <!-- Right Section: User Info & Logout -->
+            <div style="display: flex; align-items: center;">
+                <p style="margin: 0 15px;"><strong>User:</strong> {{ user.username }}</p>
+                <button onclick="location.href='{% url 'logout' %}'" style="background: red; color: white; padding: 5px 10px; border: none; cursor: pointer;">Logout</button>
+            </div>
+        </div>
+    </body>
+</html>
