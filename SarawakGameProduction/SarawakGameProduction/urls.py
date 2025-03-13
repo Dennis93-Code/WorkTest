@@ -15,8 +15,15 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from content_SGP import views
 
 urlpatterns = [
+    #
+    path('odoo/', include('odoo_mgmt.urls')),
+    # under python django session
     path('admin/', admin.site.urls),
+    path('mainpage/', views.mainpage, name='mainpage' ),
+    path('topup/', views.topup_page, name='topup_page' ),
+    path('sgp_login/', views.sgp_login, name='sgp_login'),
 ]

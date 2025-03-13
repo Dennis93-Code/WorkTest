@@ -2,8 +2,29 @@ import uuid
 import requests
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
-from django.http import JsonResponse
+from django.contrib.auth import authenticate, login as auth_login, logout
+from django.http import JsonResponse, HttpResponseRedirect
+from django.shortcuts import reverse
 from .models import TopUpTransaction
+
+#login session
+def sgp_login(request):
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            auth_login(request, user)
+            return redirect('mainpage.html')  # Replace 'home' with your desired redirect URL
+        else:
+            return render(request, 'sgp_login.html', {'message1': 'Invalid credentials'})
+    return render(request, "sgp_login.html")
+
+# Mainpage for whole section in SGP
+@login_required
+def mainpage(request):
+    return render(request, "mainpage")
+
 
 # Current example: Dummy bank API URL (replace with your bank/payment provider's API)
 # It would be replaced by the real api url under the bank api provided. Might need 2 to more main user to test it out.
