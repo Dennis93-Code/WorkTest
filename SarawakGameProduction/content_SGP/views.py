@@ -6,24 +6,44 @@ from django.contrib.auth import authenticate, login as auth_login, logout
 from django.http import JsonResponse, HttpResponseRedirect
 from django.shortcuts import reverse
 from .models import TopUpTransaction
+from django.db import connection
 
-#login session
+def execute_odoo_query():
+    with connection.cursor() as cursor:
+        cursor.execute("SELECT * FROM your_odoo_table;")
+        result = cursor.fetchall()
+    return result
+
+# def sgp_login(request): # authentication process
+#     if request.method == 'POST':
+#         username = request.POST.get('username')
+#         password = request.POST.get('password')
+#         user = authenticate(request, username=username, password=password)
+#         if user is not None:
+#             auth_login(request, user)
+#             return redirect('mainpage.html')  # Replace 'home' with your desired redirect URL
+#         else:
+#             return render(request, 'sgp_login.html', {'message1': 'Invalid credentials'})
+#     return render(request, "sgp_login.html")
+
 def sgp_login(request):
-    if request.method == 'POST':
-        username = request.POST.get('username')
-        password = request.POST.get('password')
+    if request.method == "POST":
+        username = request.POST.get("username")
+        password = request.POST.get("password")
         user = authenticate(request, username=username, password=password)
+
         if user is not None:
             auth_login(request, user)
-            return redirect('mainpage.html')  # Replace 'home' with your desired redirect URL
+            return JsonResponse({"success": True})
         else:
-            return render(request, 'sgp_login.html', {'message1': 'Invalid credentials'})
-    return render(request, "sgp_login.html")
+            return JsonResponse({"success": False, "message": "Invalid username or password"})
+
+    return render(request, "sgp_login.html")  # Default redirect if accessed via GET
 
 # Mainpage for whole section in SGP
-@login_required
+# @login_required
 def mainpage(request):
-    return render(request, "mainpage")
+    return render(request, "mainpage.html")
 
 
 # Current example: Dummy bank API URL (replace with your bank/payment provider's API)
@@ -39,11 +59,11 @@ BANK_API_URLS = {
     "qrscan": "https://api.examplebank.com/qrscan"
 }
 
-@login_required
+# @login_required
 def topup_page(request):
     return render(request, "topup.html")
 
-@login_required
+# @login_required
 def initiate_topup(request):
     if request.method == "POST":
         amount = request.POST.get("amount")
@@ -95,7 +115,7 @@ def initiate_topup(request):
             transaction.save()
             return JsonResponse({"error": f"Payment failed: {str(e)}"}, status=400)
 
-@login_required
+# @login_required
 def topup_callback(request):
     transaction_id = request.GET.get("transaction_id")
     status = request.GET.get("status")  # Assume bank returns 'success' or 'failed'

@@ -23,7 +23,7 @@
             <h2>Game Portal Login</h2>
         </div>
         <div class="login-body">
-            <form id="login-form" action="{% url 'sgp_login' %}" method="post" role="form">
+            <form id="login-form" action="{% url 'sgp_login' %}" method="post" role="form" onsubmit="checkLogin(event)">
                 {% csrf_token %}
                 <div class="form-group">
                     <input type="text" name="username" id="username" class="form-control" placeholder="Username" required autofocus autocomplete="off">
@@ -43,7 +43,7 @@
     const loginForm = document.querySelector("#login-form");
     const loginButton = document.querySelector("#login-submit");
 
-    loginForm.onsubmit = function () {
+    {% comment %} loginForm.onsubmit = function () {
         loginButton.disabled = true;
         swal({
             title: "Loading...",
@@ -52,7 +52,62 @@
             closeOnClickOutside: false,
             buttons: false,
         });
-    };
+    }; {% endcomment %}
+
+    function checkLogin(event) {
+        event.preventDefault(); // Prevent form submission
+    
+        const username = document.querySelector("#username").value;
+        const password = document.querySelector("#password").value;
+    
+        // Temporary hardcoded login check
+        if (username === "admin" && password === "admin123") {
+            swal({
+                title: "Login Successful",
+                text: "Redirecting...",
+                icon: "success",
+                timer: 2000,
+                buttons: false
+            }).then(() => {
+                window.location.href = "{% url 'mainpage' %}";
+            });
+            return; // Stop further execution
+        }
+    
+        // If credentials don't match hardcoded values, perform actual login attempt
+        fetch("{% url 'sgp_login' %}", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+                "X-CSRFToken": document.querySelector("[name=csrfmiddlewaretoken]").value
+            },
+            body: new URLSearchParams({
+                username: username,
+                password: password
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                swal({
+                    title: "Login Successful",
+                    text: "Redirecting...",
+                    icon: "success",
+                    timer: 2000,
+                    buttons: false
+                }).then(() => {
+                    window.location.href = "{% url 'mainpage' %}";
+                });
+            } else {
+                swal("Login Failed", data.message, "error");
+            }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            swal("Error", "Something went wrong. Try again!", "error");
+        });
+    }
+    
 </script>
 
 {% endblock %}

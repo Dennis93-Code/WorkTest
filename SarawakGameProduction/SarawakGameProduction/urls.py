@@ -20,7 +20,7 @@ from content_SGP import views
 
 urlpatterns = [
     #
-    path('odoo/', include('odoo_mgmt.urls')),
+    path('odoo/', include('odoo_management_sgp.urls')),
     # under python django session
     path('admin/', admin.site.urls),
     path('mainpage/', views.mainpage, name='mainpage' ),

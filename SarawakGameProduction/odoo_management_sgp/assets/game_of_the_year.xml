@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- 2021 Game of the Year -->
+        <record id="game_of_the_year_2021" model="your.model.name">
+            <field name="year">2021</field>
+            <field name="game_name">Best Game of 2021</field>
+            <field name="developer">Game Developer 1</field>
+            <field name="platform">PC</field>
+            <field name="rating">9.5</field>
+        </record>
+
+        <!-- 2022 Game of the Year -->
+        <record id="game_of_the_year_2022" model="your.model.name">
+            <field name="year">2022</field>
+            <field name="game_name">Best Game of 2022</field>
+            <field name="developer">Game Developer 2</field>
+            <field name="platform">Console</field>
+            <field name="rating">9.8</field>
+        </record>
+
+        <!-- 2023 Game of the Year -->
+        <record id="game_of_the_year_2023" model="your.model.name">
+            <field name="year">2023</field>
+            <field name="game_name">Best Game of 2023</field>
+            <field name="developer">Game Developer 3</field>
+            <field name="platform">Mobile</field>
+            <field name="rating">9.7</field>
+        </record>
+
+        <!-- 2024 Game of the Year -->
+        <record id="game_of_the_year_2024" model="your.model.name">
+            <field name="year">2024</field>
+            <field name="game_name">Best Game of 2024</field>
+            <field name="developer">Game Developer 4</field>
+            <field name="platform">PC/Console</field>
+            <field name="rating">9.9</field>
+        </record>
+    </data>
+</odoo>

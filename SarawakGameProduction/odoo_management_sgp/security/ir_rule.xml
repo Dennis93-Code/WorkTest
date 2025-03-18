@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+        <!-- Access Control for Game Data -->
+        <record id="game_of_the_year_access_rule" model="ir.rule">
+            <field name="name">Game of the Year Access</field>
+            <field name="model_id" ref="model_your_model_name"/>
+            <field name="groups" eval="[(4, ref('group_game_of_the_year_access'))]"/>
+            <field name="domain_force">[('year', '>=', 2021)]</field>
+        </record>
+    </data>
+</odoo>

@@ -69,14 +69,15 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'FISHMASTERS.wsgi.application'
 
-
 # Database
-# https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'fishmaster_odoo',
+        'USER': 'denniswong',
+        'PASSWORD': 'speeddy5158',
+        'HOST': 'localhost',  # or AWS RDS if remote
+        'PORT': '5432',
     }
 }
 

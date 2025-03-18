@@ -71,14 +71,15 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'SarawakGameProduction.wsgi.application'
+LOGIN_URL = '/sgp_login/'
 
 # DATABASE django is used for postgresql. would be setup by hiding the information to prevent security breakthrough.
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'sgp_odoo',
-        'USER': 'admin',
-        'PASSWORD': 'Speeddy5158*',
+        'USER': 'denniswong',
+        'PASSWORD': 'speeddy5158',
         'HOST': 'localhost',  # or AWS RDS if remote
         'PORT': '5432',
     }

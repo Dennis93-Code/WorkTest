@@ -1,0 +1,9 @@
+<odoo>
+    <data>
+        <!-- Security Group -->
+        <record id="group_game_of_the_year_access" model="res.groups">
+            <field name="name">Game of the Year Access</field>
+            <field name="category_id" ref="base.module_category_hidden"/>
+        </record>
+    </data>
+</odoo>
