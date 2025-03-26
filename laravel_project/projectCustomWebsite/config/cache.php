@@ -37,13 +37,16 @@ return [
             'driver' => 'array',
             'serialize' => false,
         ],
-
+        // Make sure the table must use the current table as the old version db_cache_table might not connected to
+        // current tables. Schema also included.
         'database' => [
             'driver' => 'database',
             'connection' => env('DB_CACHE_CONNECTION'),
-            'table' => env('DB_CACHE_TABLE', 'cache'),
+            // 'table' => env('DB_CACHE_TABLE', 'cache'),
+            'table' => 'datasports_information.cache', // Force schema name
             'lock_connection' => env('DB_CACHE_LOCK_CONNECTION'),
             'lock_table' => env('DB_CACHE_LOCK_TABLE'),
+            'schema' => env('DB_SCHEMA', 'datasports_information'), // Add this line
         ],
 
         'file' => [

@@ -3,7 +3,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 class GamingSocietyController extends Controller
 {
-    public function index()     {
+    public function home()     {
         return view('home');
     }
     public function about()     {
@@ -14,5 +14,8 @@ class GamingSocietyController extends Controller
     }
     public function events()    {
         return view('events');
+    }
+    public function score()    {
+        return view('score');
     }
 }
