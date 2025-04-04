@@ -1,0 +1,65 @@
+using System;
+using System.Threading;
+
+class EVCharger
+{
+    static bool isCharging = false;
+    static DateTime startTime;
+    static Random rand = new Random();
+
+    static void Main()
+    {
+        Console.WriteLine("EV Charging Station Ready...");
+        Console.WriteLine("Scan your RFID/NFC card to begin charging.");
+        
+        while (true)
+        {
+            Console.Write("[ACTION] Scan Card (Enter ID): ");
+            string userId = Console.ReadLine();
+            
+            if (AuthenticateUser(userId))
+            {
+                StartCharging();
+                Thread.Sleep(5000); // Simulating 5 sec charge
+                StopCharging();
+            }
+            else
+            {
+                Console.WriteLine("Invalid Card! Access Denied.");
+            }
+        }
+    }
+
+    static bool AuthenticateUser(string userId)
+    {
+        // Simulated user authentication
+        string[] validUsers = { "12345", "67890", "ABCDE" }; // Sample IDs
+        return Array.Exists(validUsers, id => id == userId);
+    }
+
+    static void StartCharging()
+    {
+        isCharging = true;
+        startTime = DateTime.Now;
+        Console.WriteLine("Charging Started at: " + startTime);
+    }
+
+    static void StopCharging()
+    {
+        isCharging = false;
+        DateTime stopTime = DateTime.Now;
+        TimeSpan duration = stopTime - startTime;
+
+        double energyUsed = CalculateEnergyUsage(duration);
+        Console.WriteLine($"Charging Stopped at: {stopTime}");
+        Console.WriteLine($"Total Time: {duration.TotalSeconds} sec");
+        Console.WriteLine($"Energy Consumed: {energyUsed:F2} kWh");
+        Console.WriteLine("-----------------------------");
+    }
+
+    static double CalculateEnergyUsage(TimeSpan duration)
+    {
+        double powerRating = 7.2; // Assume 7.2 kW charger
+        return (powerRating * duration.TotalHours);
+    }
+}

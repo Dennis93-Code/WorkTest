@@ -1,0 +1,62 @@
+<!-- sports_management/views/sports_overview_views.xml -->
+<odoo>
+    <data>
+
+        <!-- Overview Menu Item -->
+        <menuitem id="menu_sports_overview" name="Overview" parent="sports_management.menu_sports_management"/>
+
+        <!-- Overview Page (Dashboard) -->
+        <template id="sports_overview_template">
+            <t t-call="website.layout">
+                <div class="container">
+                    <h1>Sports Management Overview</h1>
+
+                    <div class="row">
+                        <!-- Sports Events Section -->
+                        <div class="col-md-4">
+                            <h2>Sports Events</h2>
+                            <ul>
+                                <t t-foreach="events" t-as="event">
+                                    <li>
+                                        <a t-att-href="'/sports/events/' + str(event.id)">
+                                            <t t-esc="event.name"/>
+                                        </a>
+                                    </li>
+                                </t>
+                            </ul>
+                        </div>
+
+                        <!-- Sports Teams Section -->
+                        <div class="col-md-4">
+                            <h2>Sports Teams</h2>
+                            <ul>
+                                <t t-foreach="teams" t-as="team">
+                                    <li>
+                                        <a t-att-href="'/sports/teams/' + str(team.id)">
+                                            <t t-esc="team.name"/>
+                                        </a>
+                                    </li>
+                                </t>
+                            </ul>
+                        </div>
+
+                        <!-- Sports Players Section -->
+                        <div class="col-md-4">
+                            <h2>Sports Players</h2>
+                            <ul>
+                                <t t-foreach="players" t-as="player">
+                                    <li>
+                                        <a t-att-href="'/sports/players/' + str(player.id)">
+                                            <t t-esc="player.name"/>
+                                        </a>
+                                    </li>
+                                </t>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+    </data>
+</odoo>
