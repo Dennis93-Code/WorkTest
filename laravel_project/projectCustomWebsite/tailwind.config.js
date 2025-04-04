@@ -1,13 +1,13 @@
-// tailwind.config.js
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './resources/**/*.blade.php',
-    './resources/**/*.js',
-    './resources/**/*.vue',
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+    content: [
+        './resources/views/**/*.blade.php',
+        './resources/js/**/*.js',
+        './storage/framework/views/*.php',
+        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
+    ],
+    theme: {
+        extend: {},
+    },
+    plugins: [],
+};

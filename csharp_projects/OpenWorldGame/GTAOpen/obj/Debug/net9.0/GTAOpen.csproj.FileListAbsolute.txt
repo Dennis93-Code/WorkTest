@@ -1,0 +1,15 @@
+C:\Users\Dennis Wong\Desktop\Project Assignment\WorkTest\csharp_projects\openworldgame\GTAOpen\bin\Debug\net9.0\GTAOpen.exe
+C:\Users\Dennis Wong\Desktop\Project Assignment\WorkTest\csharp_projects\openworldgame\GTAOpen\bin\Debug\net9.0\GTAOpen.deps.json
+C:\Users\Dennis Wong\Desktop\Project Assignment\WorkTest\csharp_projects\openworldgame\GTAOpen\bin\Debug\net9.0\GTAOpen.runtimeconfig.json
+C:\Users\Dennis Wong\Desktop\Project Assignment\WorkTest\csharp_projects\openworldgame\GTAOpen\bin\Debug\net9.0\GTAOpen.dll
+C:\Users\Dennis Wong\Desktop\Project Assignment\WorkTest\csharp_projects\openworldgame\GTAOpen\bin\Debug\net9.0\GTAOpen.pdb
+C:\Users\Dennis Wong\Desktop\Project Assignment\WorkTest\csharp_projects\openworldgame\GTAOpen\obj\Debug\net9.0\GTAOpen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dennis Wong\Desktop\Project Assignment\WorkTest\csharp_projects\openworldgame\GTAOpen\obj\Debug\net9.0\GTAOpen.AssemblyInfoInputs.cache
+C:\Users\Dennis Wong\Desktop\Project Assignment\WorkTest\csharp_projects\openworldgame\GTAOpen\obj\Debug\net9.0\GTAOpen.AssemblyInfo.cs
+C:\Users\Dennis Wong\Desktop\Project Assignment\WorkTest\csharp_projects\openworldgame\GTAOpen\obj\Debug\net9.0\GTAOpen.csproj.CoreCompileInputs.cache
+C:\Users\Dennis Wong\Desktop\Project Assignment\WorkTest\csharp_projects\openworldgame\GTAOpen\obj\Debug\net9.0\GTAOpen.sourcelink.json
+C:\Users\Dennis Wong\Desktop\Project Assignment\WorkTest\csharp_projects\openworldgame\GTAOpen\obj\Debug\net9.0\GTAOpen.dll
+C:\Users\Dennis Wong\Desktop\Project Assignment\WorkTest\csharp_projects\openworldgame\GTAOpen\obj\Debug\net9.0\refint\GTAOpen.dll
+C:\Users\Dennis Wong\Desktop\Project Assignment\WorkTest\csharp_projects\openworldgame\GTAOpen\obj\Debug\net9.0\GTAOpen.pdb
+C:\Users\Dennis Wong\Desktop\Project Assignment\WorkTest\csharp_projects\openworldgame\GTAOpen\obj\Debug\net9.0\GTAOpen.genruntimeconfig.cache
+C:\Users\Dennis Wong\Desktop\Project Assignment\WorkTest\csharp_projects\openworldgame\GTAOpen\obj\Debug\net9.0\ref\GTAOpen.dll

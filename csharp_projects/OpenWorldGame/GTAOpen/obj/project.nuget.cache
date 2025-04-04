@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Rd8njAwHd+w=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Dennis Wong\\Desktop\\Project Assignment\\WorkTest\\csharp_projects\\openworldgame\\GTAOpen\\GTAOpen.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dennis Wong\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\9.0.3\\microsoft.netcore.app.runtime.win-x64.9.0.3.nupkg.sha512",
+    "C:\\Users\\Dennis Wong\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\9.0.3\\microsoft.windowsdesktop.app.runtime.win-x64.9.0.3.nupkg.sha512",
+    "C:\\Users\\Dennis Wong\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\9.0.3\\microsoft.aspnetcore.app.runtime.win-x64.9.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
