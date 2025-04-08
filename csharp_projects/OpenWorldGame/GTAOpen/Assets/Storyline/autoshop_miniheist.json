@@ -1,0 +1,91 @@
+{
+  "notes": "Autoshop MiniHeist Section.",
+  "scenes": [{
+      "scene_id": "ASMHS-1",
+      "trigger": "ashms_prison_break",
+      "actions": [{
+          "action_type": "random_heist",
+          "mission_id": "ASMHS-1",
+          "area_id": "-",
+          "status" : "available" ,
+          "required" : "own_autoshop"
+    }]},
+
+    {
+      "scene_id": "ASMHS-2",
+      "trigger": "ashms_hitman_driveby",
+      "actions": [{
+          "action_type": "random_heist",
+          "mission_id": "ASMHS-2",
+          "area_id": "-",
+          "status": "available",
+          "required" : "own_autoshop"
+    }]},
+
+    {
+      "scene_id": "ASMHS-3",
+      "trigger": "ashms_agencies_delegation",
+      "actions": [{
+          "action_type": "random_heist",
+          "mission_id": "ASMHS-3",
+          "area_id": "-",
+          "status": "available",
+          "required" : "own_autoshop"
+    }]},
+
+    {
+      "scene_id": "ASMHS-4",
+      "trigger": "multibanks",
+      "actions": [{
+          "action_type": "random_heist",
+          "mission_id": "ASMHS-4",
+          "area_id": "-",
+          "status": "available",
+          "required": "own_autoshop"
+    }]},
+
+    {
+      "scene_id": "ASMHS-5",
+      "trigger": "lost_shipment",
+      "actions": [{
+          "action_type": "random_heist",
+          "mission_id": "ASMHS-5",
+          "area_id": "-",
+          "status": "available",
+          "required": "own_autoshop"
+    }]},
+
+    {
+      "scene_id": "ASMHS-6",
+      "trigger": "GoldDigger",
+      "actions": [{
+          "action_type": "random_heist",
+          "mission_id": "ASMHS-6",
+          "area_id": "-",
+          "status": "available",
+          "required": "own_autoshop"
+    }]},
+
+    {
+      "scene_id": "ASMHS-7",
+      "trigger": "Spec-Prototype",
+      "actions": [{
+          "action_type": "random_heist",
+          "mission_id": "ASMHS-7",
+          "area_id": "-",
+          "status": "available",
+          "required": "own_autoshop"
+    }]},
+
+    {
+      "scene_id": "ASMHS-8",
+      "trigger": "Data-Breach",
+      "actions": [{
+          "action_type": "random_heist",
+          "mission_id": "ASMHS-8",
+          "area_id": "-",
+          "status": "available",
+          "required": "own_autoshop"
+    }]}
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "notes": "This is a comment section. Add details about the storyline here. According to this storyline.json for functions here, it is not simple a stoyline but rather putting all scenes here specifically for every kind of mission as all missions has their own flow to let the players to enjoy.",
+  "scenes": [{
+      "scene_id": "S_P0",
+      "trigger": "story_prologue",
+      "actions": [{
+          "action_type": "move_character",
+          "character_id": "player1",
+          "mission_id": "story_prologue",
+          "coordinates": [100, 200] 
+    }]},
+
+    {
+      "scene_id": "S_T0",
+      "trigger": "story_tutorial",
+      "actions": [{
+          "action_type": "unlock_area",
+          "area_id": "city_center"
+      },{
+          "action_type": "update_mission",
+          "mission_id": "story_tutorial",
+          "status": "available"
+    }]},
+
+    {
+      "scene_id": "S_M1",
+      "trigger": "story_mission1",
+      "actions": [{
+          "action_type": "unlock_area",
+          "area_id": "city_center"
+      },{
+          "action_type": "update_mission",
+          "mission_id": "story_mission1",
+          "status": "available"
+    }]},
+
+    {
+      "scene_id": "S_M2",
+      "trigger": "story_mission2",
+      "actions": [{
+          "action_type": "unlock_area",
+          "area_id": "city_center"
+      },{
+          "action_type": "update_mission",
+          "mission_id": "story_mission2",
+          "status": "available"
+    }]}
+  ]
+}

@@ -22,3 +22,6 @@ Route::post('/sports/store', [SportController::class, 'store'])->name('sports.st
 Route::get('/manage-sports', [SportController::class, 'index'])->name('manage.sports');
 Route::get('/sports/{id}/edit', [SportController::class, 'edit'])->name('sports.edit');
 Route::post('/sports/{id}', [SportController::class, 'update'])->name('sports.update');
+
+// API Section from website to website via code platform inbetween. (laravel, odoo, c#)
+Route::post('/api/sports/send-to-odoo', [SportController::class, 'sendToOdoo']);

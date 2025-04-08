@@ -1,0 +1,91 @@
+{
+    "notes": "Junkyard MiniHeist Section.",
+    "scenes": [{
+        "scene_id": "JYMHS-1",
+        "trigger": "carheist_prisonbreak",
+        "actions": [{
+            "action_type": "random_carheist",
+            "mission_id": "JYMHS-1",
+            "area_id": "-",
+            "status" : "available" ,
+            "required" : "own_junkyard"
+      }]},
+  
+      {
+        "scene_id": "JYMHS-2",
+        "trigger": "carheist_casino_break",
+        "actions": [{
+            "action_type": "random_carheist",
+            "mission_id": "JYMHS-2",
+            "area_id": "-",
+            "status": "available",
+            "required" : "own_junkyard"
+      }]},
+
+      {
+        "scene_id": "JYMHS-3",
+        "trigger": "carheist_protoshow",
+        "actions": [{
+            "action_type": "random_carheist",
+            "mission_id": "JYMHS-3",
+            "area_id": "-",
+            "status": "available",
+            "required" : "own_junkyard"
+      }]},
+
+      {
+        "scene_id": "JYMHS-4",
+        "trigger": "carheist_Submarine_Hijack",
+        "actions": [{
+            "action_type": "random_carheist",
+            "mission_id": "JYMHS-4",
+            "area_id": "-",
+            "status": "available",
+            "required" : "own_junkyard"
+      }]},
+
+      {
+        "scene_id": "JYMHS-5",
+        "trigger": "carheist_arenaracejack",
+        "actions": [{
+            "action_type": "random_carheist",
+            "mission_id": "JYMHS-5",
+            "area_id": "-",
+            "status": "available",
+            "required" : "own_junkyard"
+      }]},
+
+      {
+        "scene_id": "JYMHS-6",
+        "trigger": "carheist_BigOfficeCompetition",
+        "actions": [{
+            "action_type": "random_carheist",
+            "mission_id": "JYMHS-6",
+            "area_id": "-",
+            "status": "available",
+            "required" : "own_junkyard"
+      }]},
+
+      {
+        "scene_id": "JYMHS-7",
+        "trigger": "carheist_TreasureHunt",
+        "actions": [{
+            "action_type": "random_carheist",
+            "mission_id": "JYMHS-7",
+            "area_id": "-",
+            "status": "available",
+            "required" : "own_junkyard"
+      }]},
+
+      {
+        "scene_id": "JYMHS-8",
+        "trigger": "carheist_transporter",
+        "actions": [{
+            "action_type": "random_carheist",
+            "mission_id": "JYMHS-8",
+            "area_id": "-",
+            "status": "available",
+            "required" : "own_junkyard"
+      }]}
+    ]
+}
