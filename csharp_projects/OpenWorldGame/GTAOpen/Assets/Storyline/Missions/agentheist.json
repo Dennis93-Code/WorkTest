@@ -1,0 +1,91 @@
+{
+    "notes": "Junkyard MiniHeist Section.",
+    "scenes": [{
+        "scene_id": "AGENTHEIST-1",
+        "trigger": "agentheist_skyhammer",
+        "actions": [{
+            "action_type": "random_agentheist",
+            "mission_id": "AGENTHEIST-1",
+            "area_id": "-",
+            "status" : "available" ,
+            "required" : "own_Marcofactory"
+      }]},
+  
+      {
+        "scene_id": "AGENTHEIST-2",
+        "trigger": "agentheist_militype",
+        "actions": [{
+            "action_type": "random_agentheist",
+            "mission_id": "AGENTHEIST-2",
+            "area_id": "-",
+            "status": "available",
+            "required" : "own_Marcofactory"
+      }]},
+
+      {
+        "scene_id": "AGENTHEIST-3",
+        "trigger": "agentheist_rivalbreach",
+        "actions": [{
+            "action_type": "random_agentheist",
+            "mission_id": "AGENTHEIST-3",
+            "area_id": "-",
+            "status": "available",
+            "required" : "own_Marcofactory"
+      }]},
+
+      {
+        "scene_id": "AGENTHEIST-4",
+        "trigger": "agentheist_scrapenda",
+        "actions": [{
+            "action_type": "random_agentheist",
+            "mission_id": "AGENTHEIST-4",
+            "area_id": "-",
+            "status": "available",
+            "required" : "own_Marcofactory"
+      }]},
+
+      {
+        "scene_id": "AGENTHEIST-5",
+        "trigger": "agentheist_politicalist",
+        "actions": [{
+            "action_type": "random_agentheist",
+            "mission_id": "AGENTHEIST-5",
+            "area_id": "-",
+            "status": "available",
+            "required" : "own_Marcofactory"
+      }]},
+
+      {
+        "scene_id": "AGENTHEIST-6",
+        "trigger": "agentheist_aventful",
+        "actions": [{
+            "action_type": "random_agentheist",
+            "mission_id": "AGENTHEIST-6",
+            "area_id": "-",
+            "status": "available",
+            "required" : "own_Marcofactory"
+      }]},
+
+      {
+        "scene_id": "AGENTHEIST-7",
+        "trigger": "agentheist_mongrabber",
+        "actions": [{
+            "action_type": "random_agentheist",
+            "mission_id": "AGENTHEIST-7",
+            "area_id": "-",
+            "status": "available",
+            "required" : "own_Marcofactory"
+      }]},
+
+      {
+        "scene_id": "AGENTHEIST-8",
+        "trigger": "agentheist_dataleak",
+        "actions": [{
+            "action_type": "random_agentheist",
+            "mission_id": "AGENTHEIST-8",
+            "area_id": "-",
+            "status": "available",
+            "required" : "own_Marcofactory"
+      }]}
+    ]
+}

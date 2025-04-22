@@ -1,0 +1,87 @@
+{
+    "scene_id": "PREP-RT",
+    "trigger": "prep_romtest",
+    "required_to_proceed": "unknown",
+    "tasks": [
+      {
+        "task_id": "get_drill",
+        "description1": "Reach the construction area desginated.",
+        "description2": "Acquire the construction suit.",
+        "description3": "Steal the drill equipment.",
+        "description4a": "Bring the stolen drill equipment back to base.",
+        "description4b": "Lose the cops.",
+        "optional": false,
+        "setup_unlock": 10,
+        "fail_condition1": "time limit over.",
+        "fail_condition2": "Drill Equipment destroyed.",
+        "condition_trigger1": "Detected, going on description 3 and skipped description2",
+        "condition_trigger2": "Alert cop presence after steal the drill equipment with condition_trigger1 avaliable",
+        "condition_trigger3": "description4a would change to description4b when cops on player's tail, after evaded, change back to description4a"
+      },
+      {
+        "task_id": "scout_bank",
+        "description1": "Reach the desginated bank.",
+        "description2": "Leave the area.",
+        "description3": "Hack the bank security system using device.",
+        "description4": "Drive back to base.",
+        "optional": false,
+        "setup_unlock": 10,
+        "fail_condition1": "trigger cop response.",
+        "fail_condition2": "player died.",
+        "fail_condition3": "time limit over."
+      },
+      {
+        "task_id": "get_getaway_vehicle",
+        "description1": "Reach the designated location.",
+        "description2": "Acquire the armoured vehicle.",
+        "description3": "Bring back armoured vehicle to base.",
+        "optional": false,
+        "setup_unlock": 10,
+        "fail_condition1": "time limit over.",
+        "fail_condition2": "vehicle destoryed."
+      },
+      {
+        "task_id": "get_gun_equipment",
+        "description1": "Reach the target desginated.",
+        "description2": "Eliminate hostile heister.",
+        "description3": "Steal the gun equipment.",
+        "description4a": "Bring the stolen gun equipment back to base.",
+        "description4b": "Lose the cops.",
+        "optional": false,
+        "setup_unlock": 10,
+        "fail_condition1": "time limit over.",
+        "fail_condition2": "Gun Equipment destroyed.",
+        "condition_trigger1": "Alert cop presence after steal the gun equipment with condition_trigger1 avaliable",
+        "condition_trigger2": "description4a would change to description4b when cops on player's tail, after evaded, change back to description4a"
+      },
+      {
+        "task_id": "steal_keycard",
+        "description1": "Track down the pinpoint location",
+        "description2a": "Scan the security guard via phone within the security range.",
+        "description2b": "Acquired the phone from security guard.",
+        "description3a": "Go to the designated location under security guard's house.",
+        "description3b": "Lose the cops.",
+        "description4": "Find and steal the key card.",
+        "description5a": "Leave the area and bring key card to base.",
+        "description5b": "Lose the cops.",
+        "optional": false,
+        "setup_unlock": 10,
+        "fail_condition1": "time limit over.",
+        "condition_trigger1": "description 1 or 2a to description 2b by trigger the cops attention. All would go to description 3b and until it is achieved, it would go to description 3a.",
+        "condition_trigger2": "description 4 trigger cops would go to description 5b later after stealing, it would go to description 5a after cops evasion in description 5b."
+      },
+      {
+        "task_id": "deductment_security",
+        "description1": "Reach the designated motel.",
+        "description2": "Eliminate security forces.",
+        "description3a": "Find the scheduler around the room.",
+        "description3b": "Pick up the scheduler.",
+        "description4": "Eliminate the remaining security reinforcements",
+        "description5": "Bring back the scheduler to the room.",
+        "optional": true,
+        "setup_unlock": 10,
+        "missionover_condition1": "time limit over."
+      }
+    ],
+    "fail_action": "popup shown and still remain the same place where player fail. No restart as it is online mode"
+  }

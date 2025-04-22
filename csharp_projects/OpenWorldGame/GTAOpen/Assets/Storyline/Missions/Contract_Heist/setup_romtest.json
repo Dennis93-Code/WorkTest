@@ -1,0 +1,49 @@
+{
+    "scene_id": "SETUP-RT",
+    "trigger": "setup_romtest",
+    "tasks": [
+      {
+        "process_unlock_required": "scout_bank",
+        "task_id": "bug_planting",
+        "description1": "Reach the target desginated nearby the bank.",
+        "description2": "Plant the distruptor bugs.",
+        "description3a": "Return to base.",
+        "description3b": "Lose the cops.",
+        "heist_percentage": 20,
+        "fail_condition1": "Player died.",
+        "condition_trigger1": "Description 2 has multiple targets, remain as the target even with involvement of cops.",
+        "condition_trigger2": "Detected by cops but remain the set until reaching description 3a, it will trigger 3b first before description 3a after evaded."
+      },
+      {
+        "process_unlock_required": "get_getaway_vehicle",
+        "task_id": "vehicle_equipment",
+        "description1a": "Get in the vehicle.",
+        "description1b": "Go to Bobert Mayor house.",
+        "description2a": "Kill all securities and manufacturer.",
+        "description2b": "Acquire the Prototype Equipment.",
+        "cutscene1":"Taking the prototype equipment and other lethal equipments for additional work into the car",
+        "description3a": "Activate the bypass security system",
+        "description3b": "Defend the production work ongoing while resisting the enemies onslaught.",
+        "description4": "Bring the vehicle work to base.",
+        "heist_percentage": 20,
+        "fail_condition1": "Plyaer died.",
+        "fail_condition2": "Vehicle destroyed.",
+        "fail_condition3": "Prototype Equipment destroyed."
+      },
+      {
+        "process_unlock_required": "steal_keycard",
+        "task_id": "vehicle_equipment",
+        "description1a": "Get in the vehicle.",
+        "description1b": "Go to Bobert Mayor house.",
+        "description2a": "Kill all securities and manufacturer.",
+        "description2b": "Acquire the Prototype Equipment.",
+        "cutscene1":"Taking the prototype equipment and other lethal equipments for additional work into the car",
+        "description3a": "Activate the bypass security system",
+        "description3b": "Defend the production work ongoing while resisting the enemies onslaught.",
+        "description4": "Bring the vehicle work to base.",
+        "heist_percentage": 20,
+        "fail_condition1": "Plyaer died."
+      }
+    ],
+    "fail_action": "popup shown and still remain the same place where player fail. No restart as it is online mode"
+  }
