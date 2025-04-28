@@ -1,0 +1,23 @@
+{
+  "name": "test-escpos",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "^5.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@node-escpos/core": "^0.6.0",
+    "@node-escpos/network-adapter": "^0.0.1",
+    "@tillpos/xml-escpos-helper": "^0.3.1",
+    "@types/cors": "^2.8.17",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "hono": "^4.6.17",
+    "install": "^0.13.0"
+  }
+}
