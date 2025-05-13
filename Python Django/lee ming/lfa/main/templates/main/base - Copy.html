@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}LF Advertising{% endblock %}</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+	
+	{% block moreheadelement %} {% endblock %}
+</head>
+<body>
+    <header class="sticky-top">
+        <!-- Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand" href="{% url 'home' %}">LF Advertising</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav mx-auto navbar-expand-menu">
+						<li class="nav-item">
+							<a class="nav-link" href="{% url 'home' %}">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{% url 'about' %}">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{% url 'products' %}">Products</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{% url 'services' %}">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{% url 'contact' %}">Contact</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link btn btn-danger text-white" href="{% url 'request_quote' %}">Request a Quote</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+    </header>
+
+    <main role="main">
+        {% block content %}
+        <!-- Content will be injected here -->
+        {% endblock %}
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 LF Advertising. All rights reserved.</p>
+			<p class="terms">
+				<a href="{% url 'privacy_policy' %}">Privacy Policy</a> &nbsp;|&nbsp;
+				<a href="{% url 'terms_and_conditions' %}">Terms and Conditions</a>
+			</p>
+        </div>
+    </footer>
+</body>
+</html>

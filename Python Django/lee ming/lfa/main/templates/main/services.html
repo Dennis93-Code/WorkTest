@@ -1,0 +1,415 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+<!-- Banner Section -->
+<div class="services-page-banner text-center" style="padding-top:5em; padding-bottom:5em;">
+    <div class="container">
+        <h1 class="display-4">Our Services</h1>
+        <p class="lead">Discover the exceptional services we offer to elevate your business.</p>
+        <a href="#services" class="btn btn-primary btn-lg">Explore Our Services</a>
+    </div>
+</div>
+
+<!-- Services Sections -->
+<div id="services">
+
+    <!-- Design Services -->
+<section class="service-category design-services full-width-section">
+    <div class="container text-center mb-4">
+        <h2 class="section-title">Design Services</h2>
+        <p class="section-description">From captivating graphic designs to innovative 3D elements, explore our comprehensive design services that cater to all your creative needs.</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Service: Graphic Design -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="service-card">
+                    <img src="{% static 'images/service1.jpeg' %}" class="card-img-top" alt="Graphic Design">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Graphic Design</h5>
+                        <p class="card-text">Creation of visual content for print and digital media, including logos, brochures, and advertisements.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service: Web Design -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="service-card">
+                    <img src="{% static 'images/service2.jpeg' %}" class="card-img-top" alt="Web Design">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Web Design</h5>
+                        <p class="card-text">Design of websites and landing pages, often integrated with print marketing efforts for a cohesive online presence.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service: 3D Design -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="service-card">
+                    <img src="{% static 'images/service3.jpeg' %}" class="card-img-top" alt="3D Design">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">3D Design</h5>
+                        <p class="card-text">Design of three-dimensional elements for signage, displays, and other visual experiences.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Printing Services -->
+<section class="service-category print-services full-width-section">
+    <div class="container text-center mb-4">
+        <h2 class="section-title">Printing Services</h2>
+        <p class="section-description">Explore our wide range of printing services that deliver precision, quality, and versatility for every project.</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Service: Offset Printing -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="service-card">
+                    <img src="{% static 'images/service4.jpeg' %}" class="card-img-top" alt="Offset Printing">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Offset Printing</h5>
+                        <p class="card-text">Traditional printing method for high-volume jobs, ensuring consistent color accuracy and quality.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service: Digital Printing -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="service-card">
+                    <img src="{% static 'images/service5.jpeg' %}" class="card-img-top" alt="Digital Printing">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Digital Printing</h5>
+                        <p class="card-text">Flexible, high-resolution printing for short runs and quick turnaround times.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service: Screen Printing -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="service-card">
+                    <img src="{% static 'images/service6.jpeg' %}" class="card-img-top" alt="Screen Printing">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Screen Printing</h5>
+                        <p class="card-text">Custom printing for apparel, textiles, and promotional items with vibrant colors and durability.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service: Specialty Printing -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="service-card">
+                    <img src="{% static 'images/service7.jpeg' %}" class="card-img-top" alt="Specialty Printing">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Specialty Printing</h5>
+                        <p class="card-text">Techniques such as UV printing, foiling, and embossing to create unique and eye-catching effects.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Finishing Services -->
+<section class="service-category finishing-services full-width-section">
+    <div class="container text-center mb-4">
+        <h2 class="section-title">Finishing Services</h2>
+        <p class="section-description">Enhance the look and durability of your prints with our range of finishing services, designed for superior quality and precision.</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Service: Laminating -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="service-card">
+                    <img src="{% static 'images/service8.jpeg' %}" class="card-img-top" alt="Laminating">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Laminating</h5>
+                        <p class="card-text">Applying a protective laminate to enhance the durability and appearance of printed materials.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service: Binding -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="service-card">
+                    <img src="{% static 'images/service9.jpeg' %}" class="card-img-top" alt="Binding">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Binding</h5>
+                        <p class="card-text">Binding documents, reports, and books with options such as saddle-stitching and perfect binding.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service: Cutting and Trimming -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="service-card">
+                    <img src="{% static 'images/service10.jpeg' %}" class="card-img-top" alt="Cutting and Trimming">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cutting and Trimming</h5>
+                        <p class="card-text">Precision cutting and trimming to meet your specifications and ensure the perfect finish.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service: Embossing and Debossing -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="service-card">
+                    <img src="{% static 'images/service11.jpeg' %}" class="card-img-top" alt="Embossing and Debossing">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Embossing and Debossing</h5>
+                        <p class="card-text">Creating raised or recessed designs on materials to add a tactile element and visual interest.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Installation Services -->
+<section class="service-category installation-services full-width-section">
+    <div class="container text-center mb-4">
+        <h2 class="section-title">Installation Services</h2>
+        <p class="section-description">Ensure your signs, banners, and displays are professionally installed with our expert installation services.</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Service: Sign Installation -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="service-card">
+                    <img src="{% static 'images/service12.jpeg' %}" class="card-img-top" alt="Sign Installation">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sign Installation</h5>
+                        <p class="card-text">Professional installation of exterior and interior signs to enhance visibility and brand presence.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service: Banner and Display Setup -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="service-card">
+                    <img src="{% static 'images/service13.jpeg' %}" class="card-img-top" alt="Banner and Display Setup">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Banner and Display Setup</h5>
+                        <p class="card-text">Installation of banners, posters, and tradeshow displays to ensure effective presentation.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service: Vehicle Wrap Application -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="service-card">
+                    <img src="{% static 'images/service14.jpeg' %}" class="card-img-top" alt="Vehicle Wrap Application">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Vehicle Wrap Application</h5>
+                        <p class="card-text">Applying wraps to vehicles for effective and mobile advertising solutions.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Packaging Solutions -->
+<section class="service-category packaging-solutions full-width-section">
+    <div class="container text-center mb-4">
+        <h2 class="section-title">Packaging Solutions</h2>
+        <p class="section-description">Design and production of custom packaging and labeling solutions to enhance product presentation and branding.</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Service: Custom Packaging -->
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="service-card">
+                    <img src="{% static 'images/service15.jpeg' %}" class="card-img-top" alt="Custom Packaging">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Custom Packaging</h5>
+                        <p class="card-text">Designing and producing packaging solutions tailored to your product needs and branding.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service: Labeling -->
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="service-card">
+                    <img src="{% static 'images/service16.jpeg' %}" class="card-img-top" alt="Labeling">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Labeling</h5>
+                        <p class="card-text">Creating custom labels for product identification, branding, and compliance.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+	<!-- Consulting Services -->
+<section class="service-category consulting-services full-width-section">
+    <div class="container text-center mb-4">
+        <h2 class="section-title">Consulting Services</h2>
+        <p class="section-description">Expert advice and strategic planning to optimize your print and marketing efforts.</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Service: Print Consulting -->
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="service-card">
+                    <img src="{% static 'images/service17.jpeg' %}" class="card-img-top" alt="Print Consulting">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Print Consulting</h5>
+                        <p class="card-text">Advising on the best printing methods and materials to achieve your specific goals.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service: Marketing Strategy -->
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="service-card">
+                    <img src="{% static 'images/service18.png' %}" class="card-img-top" alt="Marketing Strategy">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Marketing Strategy</h5>
+                        <p class="card-text">Developing strategies that integrate print and digital marketing to maximize impact.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+	<!-- Logistics and Fulfillment -->
+<section class="service-category logistics-fulfillment full-width-section">
+    <div class="container text-center mb-4">
+        <h2 class="section-title">Logistics and Fulfillment</h2>
+        <p class="section-description">Efficient handling, storage, and delivery of your printed materials, ensuring timely and accurate fulfillment.</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Service: Distribution -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="service-card">
+                    <img src="{% static 'images/service19.png' %}" class="card-img-top" alt="Distribution">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Distribution</h5>
+                        <p class="card-text">Coordinating the delivery of printed materials to various locations efficiently and on time.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service: Warehousing -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="service-card">
+                    <img src="{% static 'images/service20.jpeg' %}" class="card-img-top" alt="Warehousing">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Warehousing</h5>
+                        <p class="card-text">Storing printed materials until they are needed, with secure and organized facilities.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service: Order Fulfillment -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="service-card">
+                    <img src="{% static 'images/service21.jpeg' %}" class="card-img-top" alt="Order Fulfillment">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Order Fulfillment</h5>
+                        <p class="card-text">Handling the preparation and shipping of orders to ensure accurate and timely delivery.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Customer Support and Maintenance -->
+<section class="service-category customer-support-maintenance full-width-section">
+    <div class="container text-center mb-4">
+        <h2 class="section-title">Customer Support and Maintenance</h2>
+        <p class="section-description">Comprehensive support and maintenance services to address issues and keep your signs and displays in top condition.</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Service: Support Services -->
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="service-card">
+                    <img src="{% static 'images/service22.png' %}" class="card-img-top" alt="Support Services">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Support Services</h5>
+                        <p class="card-text">Offering customer service for issues related to print and installation to ensure satisfaction.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Service: Maintenance -->
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="service-card">
+                    <img src="{% static 'images/service23.png' %}" class="card-img-top" alt="Maintenance">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Maintenance</h5>
+                        <p class="card-text">Ongoing support for signage and displays, including repairs and updates to maintain their effectiveness.</p>
+                        <a href="#" class="btn btn-custom">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</div>
+
+<!-- Testimonials Section -->
+<div class="testimonials-section bg-light py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">What Our Clients Say</h2>
+        <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Testimonial 1 -->
+                <div class="carousel-item active">
+                    <div class="testimonial-item">
+                        <p>"Excellent service! The team delivered outstanding results and was a pleasure to work with."</p>
+                        <footer class="blockquote-footer">Client 1</footer>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="carousel-item">
+                    <div class="testimonial-item">
+                        <p>"Professional, efficient, and innovative. Highly recommend their services."</p>
+                        <footer class="blockquote-footer">Client 2</footer>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="carousel-item">
+                    <div class="testimonial-item">
+                        <p>"Exceptional quality and a keen understanding of our needs. They exceeded our expectations."</p>
+                        <footer class="blockquote-footer">Client 3</footer>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#testimonialsCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#testimonialsCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Call-to-Action Section -->
+<div class="cta-section bg-dark text-white py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Ready to Transform Your Business?</h2>
+        <p>Get in touch with us to discover how our services can make a difference.</p>
+        <a href="{% url 'contact' %}" class="btn btn-light btn-lg">Contact Us</a>
+    </div>
+</div>
+{% endblock %}

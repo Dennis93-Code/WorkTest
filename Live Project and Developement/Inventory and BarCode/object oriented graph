@@ -1,0 +1,22 @@
+Start (Begin Work)
+
+Request Cooler Box
+- Message for request a cooler box.
+
+Approval
+- If rejected:
+    Provide a message to the Requester. No scanner
+
+- If approved:
+    Message to the requester
+    for approved request and provide barcode specifically for the process and the product itself involved.
+
+Store Keeper to prepare Cooler Box (next Step)
+
+Notification send back to requester and update the status
+- Provide Scan 1 for status retrieve between storekeeper and requestor
+
+Transition:
+-Provide scan 2 for status departure in transportation process between requestor and courier
+-Provide scan 3 for status arrival (arrive at station). Courier send the message to requestor and receiver.
+-Provide scan 4 for status receiver (given to client) and notify the requestor between receiver and requestor

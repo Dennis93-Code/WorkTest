@@ -1,0 +1,121 @@
+/* Custom styles for LF Advertising */
+
+/* Navbar */
+.navbar {
+    background-color: #000; /* Black background */
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    padding: 0.75rem 1.25rem;
+}
+
+.nav-link.btn {
+    border-radius: 20px; /* Rounded buttons */
+}
+
+/* Jumbotron */
+.jumbotron {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("{% static 'media/hero-banner.jpg' %}") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 4rem 2rem;
+    border-radius: 0;
+}
+
+.jumbotron h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.jumbotron p {
+    font-size: 1.25rem;
+}
+
+/* Card */
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* Testimonials */
+/* Testimonials Container */
+.testimonial-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 1rem 0;
+    white-space: wrap;
+}
+
+.testimonial {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust width as needed */
+    margin-right: 1.5rem;
+    background-color: #f8f9fa; /* Light background for readability */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for better separation */
+    padding: 1rem;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    overflow: hidden; /* Hide any overflow */
+    text-align: center; /* Center text horizontally */
+}
+
+/* Ensure blockquote styling is applied correctly */
+.blockquote {
+    margin: 0; /* Remove default margin */
+    padding: 1rem;
+    border-left: 4px solid #dc3545; /* Red line */
+    background-color: #fff; /* White background for blockquote */
+    display: inline-block; /* Prevent blockquote from expanding beyond its container */
+    width: 100%; /* Ensure blockquote takes full width of its container */
+    box-sizing: border-box; /* Include padding in the width */
+    overflow: hidden; /* Hide any overflow */
+    text-align: left; /* Align text to the left for better readability */
+}
+
+.blockquote-footer {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333; /* Dark color for text */
+}
+
+/* Add scrollbar styles for Webkit browsers (e.g., Chrome, Safari) */
+.testimonial-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.testimonial-container::-webkit-scrollbar-thumb {
+    background: #dc3545; /* Red color for the scrollbar thumb */
+    border-radius: 4px;
+}
+
+.testimonial-container::-webkit-scrollbar-track {
+    background: #f8f9fa; /* Light background for the scrollbar track */
+}
+

@@ -1,0 +1,83 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Banner Section -->
+<div class="product-page-banner text-center">
+    <div class="container">
+        <h1 class="display-4">Our Amazing Products</h1>
+		<p class="lead">Discover our diverse range of high-quality products and solutions tailored to your needs.</p>
+		<a href="#" class="btn btn-primary">Explore Our Products</a>
+	</div>
+</div>
+
+<!-- Featured Products Carousel -->
+<div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+            <img src="{% static 'images/feature1.jpeg' %}" class="d-block w-100" alt="Featured Product 1">
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+            <img src="{% static 'images/feature2.jpeg' %}" class="d-block w-100" alt="Featured Product 2">
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+            <img src="{% static 'images/feature3.jpeg' %}" class="d-block w-100" alt="Featured Product 3">
+        </div>
+        <!-- Slide 4 -->
+        <div class="carousel-item active">
+            <img src="{% static 'images/feature4.jpeg' %}" class="d-block w-100" alt="Featured Product 4">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#productCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#productCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
+</div>
+
+<!-- product_categories.html -->
+<div class="container mt-5">
+    {% for category, products in categories.items %}
+        <div class="product-category-section">
+            <h3 class="text-center mb-4">{{ category }}</h3>
+            <div class="row">
+                {% for product in products %}
+                    <div class="col-md-4 mb-4">
+                        <div class="card product-card shadow">
+                            {% if product.image %}
+                                <img src="{{ product.image.url }}" class="card-img-top product-card-img" alt="{{ product.name }}">
+                            {% else %}
+                                <img src="https://via.placeholder.com/400x300?text=No+Image" class="card-img-top product-card-img" alt="No Image">
+                            {% endif %}
+                            <div class="card-body">
+                                <h5 class="card-title">{{ product.name }}</h5>
+                                <p class="card-text">{{ product.description }}</p>
+                                <a href="{% url 'product_detail' product.productid %}" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                {% empty %}
+                    <p>No products available in this category.</p>
+                {% endfor %}
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+
+<!-- Call-to-Action Section -->
+<div class="cta-section bg-dark text-white py-5 mt-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Ready to Get Started?</h2>
+        <p>Contact us today and let’s discuss how we can assist you in achieving your goals.</p>
+        <a href="{% url 'contact' %}" class="btn btn-light btn-lg">Get in Touch</a>
+    </div>
+</div>
+{% endblock %}
+<!-- Product Categories -->

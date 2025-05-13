@@ -1,0 +1,221 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block title %}Home - LF Advertising{% endblock %}
+
+{% block moreCSS %}
+<style>
+/* Ensure container does not extend past screen width */
+.container {
+    overflow: hidden ;
+}
+</style>
+{% endblock %}
+
+{% block moreJSS %}
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var myCarousel = document.querySelector('#featuredProductsCarousel');
+    var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 10000, // Change slide every 5 seconds
+        wrap: true,     // Loop back to the start when reaching the end
+        pause: true    // Enable pause on hover
+    });
+
+    // Continuously slide by manually controlling the carousel
+    setInterval(function() {
+        carousel.next();
+    }, 10000); // Adjust this to match the interval
+});
+</script>
+{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="jumbotron jumbotron-fluid hero-animate">
+    <div class="hero-content">
+        <div class="container">
+            <h1 class="display-4" style="text-shadow: 5px 5px 20px black;">Transform Your Brand with Creative Advertising Agency</h1>
+            <p class="lead" style="background-color:black; margin:2em;">Elevate your business with LF Advertising’s creative large-format design and printing solutions, offering high-impact visuals like billboards and banners to captivate your audience.</p>
+            <a href="{% url 'request_quote' %}" class="btn btn-light btn-lg">Request a Quote</a>
+        </div>
+    </div>
+    <div class="hero-images">
+        <!-- Example images for masonry effect -->
+        <img src="{% static 'images/urban_billboard_ad.jpeg' %}" class="hero-image" alt="Urban Billboard Advertisement">
+		<img src="{% static 'images/creative_team_office.jpeg' %}" class="hero-image" alt="Creative Team Office">
+		<img src="{% static 'images/large_scale_projects.jpeg' %}" class="hero-image" alt="Large Scale Projects">
+		<img src="{% static 'images/digital_design_screen.jpeg' %}" class="hero-image" alt="Digital Design Screen">
+
+    </div>
+    <a href="#featuredproducts" class="scroll-down">
+        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </a>
+</div>
+
+<!-- Featured Products Section -->
+<div id="featuredproducts" class="container mt-5">
+    <h2 class="mb-4">Our Featured Products</h2>
+    <div id="featuredProductsCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false">
+        <div class="carousel-inner">
+            {% for product in featured_products %}
+                <div class="carousel-item carousel-featured-item {% if forloop.first %}active{% endif %}">
+                    <div class="mb-4">
+                        <div>
+                            <div class="card-inner">
+                                {% if product.image %}
+                                    <img src="{{ MEDIA_URL }}{{ product.image }}" class="card-img-top" alt="{{ product.name }}">
+                                {% else %}
+                                    <img src="{% static 'images/placeholder.png' %}" class="card-img-top" alt="product">
+                                {% endif %}
+                                <div class="card-body">
+                                    <h5 class="card-title" style="text-align:center">{{ product.name }}</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% empty %}
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card shadow">
+                                <div class="card-body">
+                                    <p>No featured products available.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <a class="carousel-control-prev" href="#featuredProductsCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#featuredProductsCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+
+<!-- Work Section -->
+<div class="container mt-5">
+    <h2 class="mb-4">Our Work</h2>
+    <div id="portfolioCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+            {% if portfolio_chunks %}
+                {% for chunk in portfolio_chunks %}
+                    {% if forloop.first %}
+                        <div class="carousel-item active">
+                    {% else %}
+                        <div class="carousel-item">
+                    {% endif %}
+                        <div class="d-flex">
+                            {% for item in chunk %}
+                                <div class="work-item">
+                                    <img src="{{ item.image.url }}" class="img-fluid rounded shadow carousel-fade-item" alt="{{ item.title }}" data-title="{{ item.title }}" data-description="{{ item.description }}">
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+
+<!-- Testimonials Section -->
+<div class="container mt-5 testimonials-animate">
+    <h2 class="mb-4">Client Testimonials</h2>
+    <div class="testimonial-container">
+        <!-- Duplicate the testimonials for seamless scrolling -->
+        <div class="testimonial">
+            <blockquote class="blockquote">
+                <p class="mb-0">"LF Advertising provided exceptional service and high-quality products. Our campaign was a huge success!"</p>
+                <footer class="blockquote-footer">Jane Doe, <cite title="Source Title">Marketing Manager</cite></footer>
+            </blockquote>
+        </div>
+        <div class="testimonial">
+            <blockquote class="blockquote">
+                <p class="mb-0">"Their attention to detail and creativity set them apart from others. Highly recommend!"</p>
+                <footer class="blockquote-footer">John Smith, <cite title="Source Title">Business Owner</cite></footer>
+            </blockquote>
+        </div>
+        <div class="testimonial">
+            <blockquote class="blockquote">
+                <p class="mb-0">"Professional service and top-notch products. LF Advertising truly understands our needs."</p>
+                <footer class="blockquote-footer">Emily Johnson, <cite title="Source Title">Creative Director</cite></footer>
+            </blockquote>
+        </div>
+        <!-- Add more testimonials here -->
+        <div class="testimonial">
+            <blockquote class="blockquote">
+                <p class="mb-0">"A fantastic experience from start to finish. Highly professional and efficient!"</p>
+                <footer class="blockquote-footer">Alice Williams, <cite title="Source Title">Event Coordinator</cite></footer>
+            </blockquote>
+        </div>
+        <div class="testimonial">
+            <blockquote class="blockquote">
+                <p class="mb-0">"The team went above and beyond to meet our needs. Will definitely use their services again."</p>
+                <footer class="blockquote-footer">Robert Brown, <cite title="Source Title">Product Manager</cite></footer>
+            </blockquote>
+        </div>
+        
+        <!-- Duplicate testimonials for seamless loop -->
+        <div class="testimonial">
+            <blockquote class="blockquote">
+                <p class="mb-0">"LF Advertising provided exceptional service and high-quality products. Our campaign was a huge success!"</p>
+                <footer class="blockquote-footer">Jane Doe, <cite title="Source Title">Marketing Manager</cite></footer>
+            </blockquote>
+        </div>
+        <div class="testimonial">
+            <blockquote class="blockquote">
+                <p class="mb-0">"Their attention to detail and creativity set them apart from others. Highly recommend!"</p>
+                <footer class="blockquote-footer">John Smith, <cite title="Source Title">Business Owner</cite></footer>
+            </blockquote>
+        </div>
+        <div class="testimonial">
+            <blockquote class="blockquote">
+                <p class="mb-0">"Professional service and top-notch products. LF Advertising truly understands our needs."</p>
+                <footer class="blockquote-footer">Emily Johnson, <cite title="Source Title">Creative Director</cite></footer>
+            </blockquote>
+        </div>
+        <!-- Add more testimonials here -->
+        <div class="testimonial">
+            <blockquote class="blockquote">
+                <p class="mb-0">"A fantastic experience from start to finish. Highly professional and efficient!"</p>
+                <footer class="blockquote-footer">Alice Williams, <cite title="Source Title">Event Coordinator</cite></footer>
+            </blockquote>
+        </div>
+        <div class="testimonial">
+            <blockquote class="blockquote">
+                <p class="mb-0">"The team went above and beyond to meet our needs. Will definitely use their services again."</p>
+                <footer class="blockquote-footer">Robert Brown, <cite title="Source Title">Product Manager</cite></footer>
+            </blockquote>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- CTA Section -->
+<div class="bg-dark text-white py-5 mt-5">
+    <div class="cta-animate container text-center">
+		<h2>Ready to Take Your Brand to the Next Level?</h2>
+		<p>Contact us today to discuss your advertising needs and get a custom solution tailored just for you.</p>
+		<a href="{% url 'contact' %}" class="btn btn-primary btn-lg">Contact Us</a>
+	</div>
+</div>
+
+{% endblock %}

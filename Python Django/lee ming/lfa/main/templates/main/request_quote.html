@@ -1,0 +1,40 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Request a Quote - LF Advertising{% endblock %}
+
+{% block content %}
+<!-- Banner Section -->
+<div class="rq-page-banner text-center">
+    <div class="container">
+        <h1 class="display-4">Request a Quote</h1>
+		<p class="lead">Request a personalized quote and find the best solution tailored to your needs.</p>
+	</div>
+</div>
+
+<div class="container mt-5">
+    <form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Your Email">
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Describe your needs or ask questions"></textarea>
+        </div><br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <div class="row mt-4">
+        <div class="col-md-6 mb-4">
+            <img src="https://via.placeholder.com/800x600?text=Example+Image" class="img-fluid" alt="Request Quote Image">
+        </div>
+        <div class="col-md-6 mb-4">
+            <img src="https://via.placeholder.com/800x600?text=Example+Image" class="img-fluid" alt="Request Quote Image">
+        </div>
+    </div>
+</div>
+{% endblock %}

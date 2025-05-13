@@ -1,0 +1,345 @@
+[
+{"type":"header","version":"5.2.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"lfa"},
+{"type":"table","name":"auth_group","database":"lfa","data":
+[
+
+]
+}
+,{"type":"table","name":"auth_group_permissions","database":"lfa","data":
+[
+
+]
+}
+,{"type":"table","name":"auth_permission","database":"lfa","data":
+[
+{"id":"1","name":"Can add log entry","content_type_id":"1","codename":"add_logentry"},
+{"id":"2","name":"Can change log entry","content_type_id":"1","codename":"change_logentry"},
+{"id":"3","name":"Can delete log entry","content_type_id":"1","codename":"delete_logentry"},
+{"id":"4","name":"Can view log entry","content_type_id":"1","codename":"view_logentry"},
+{"id":"5","name":"Can add permission","content_type_id":"2","codename":"add_permission"},
+{"id":"6","name":"Can change permission","content_type_id":"2","codename":"change_permission"},
+{"id":"7","name":"Can delete permission","content_type_id":"2","codename":"delete_permission"},
+{"id":"8","name":"Can view permission","content_type_id":"2","codename":"view_permission"},
+{"id":"9","name":"Can add group","content_type_id":"3","codename":"add_group"},
+{"id":"10","name":"Can change group","content_type_id":"3","codename":"change_group"},
+{"id":"11","name":"Can delete group","content_type_id":"3","codename":"delete_group"},
+{"id":"12","name":"Can view group","content_type_id":"3","codename":"view_group"},
+{"id":"13","name":"Can add user","content_type_id":"4","codename":"add_user"},
+{"id":"14","name":"Can change user","content_type_id":"4","codename":"change_user"},
+{"id":"15","name":"Can delete user","content_type_id":"4","codename":"delete_user"},
+{"id":"16","name":"Can view user","content_type_id":"4","codename":"view_user"},
+{"id":"17","name":"Can add content type","content_type_id":"5","codename":"add_contenttype"},
+{"id":"18","name":"Can change content type","content_type_id":"5","codename":"change_contenttype"},
+{"id":"19","name":"Can delete content type","content_type_id":"5","codename":"delete_contenttype"},
+{"id":"20","name":"Can view content type","content_type_id":"5","codename":"view_contenttype"},
+{"id":"21","name":"Can add session","content_type_id":"6","codename":"add_session"},
+{"id":"22","name":"Can change session","content_type_id":"6","codename":"change_session"},
+{"id":"23","name":"Can delete session","content_type_id":"6","codename":"delete_session"},
+{"id":"24","name":"Can view session","content_type_id":"6","codename":"view_session"},
+{"id":"25","name":"Can add blog post","content_type_id":"7","codename":"add_blogpost"},
+{"id":"26","name":"Can change blog post","content_type_id":"7","codename":"change_blogpost"},
+{"id":"27","name":"Can delete blog post","content_type_id":"7","codename":"delete_blogpost"},
+{"id":"28","name":"Can view blog post","content_type_id":"7","codename":"view_blogpost"},
+{"id":"29","name":"Can add portfolio item","content_type_id":"8","codename":"add_portfolioitem"},
+{"id":"30","name":"Can change portfolio item","content_type_id":"8","codename":"change_portfolioitem"},
+{"id":"31","name":"Can delete portfolio item","content_type_id":"8","codename":"delete_portfolioitem"},
+{"id":"32","name":"Can view portfolio item","content_type_id":"8","codename":"view_portfolioitem"},
+{"id":"33","name":"Can add product","content_type_id":"9","codename":"add_product"},
+{"id":"34","name":"Can change product","content_type_id":"9","codename":"change_product"},
+{"id":"35","name":"Can delete product","content_type_id":"9","codename":"delete_product"},
+{"id":"36","name":"Can view product","content_type_id":"9","codename":"view_product"},
+{"id":"37","name":"Can add service","content_type_id":"10","codename":"add_service"},
+{"id":"38","name":"Can change service","content_type_id":"10","codename":"change_service"},
+{"id":"39","name":"Can delete service","content_type_id":"10","codename":"delete_service"},
+{"id":"40","name":"Can view service","content_type_id":"10","codename":"view_service"}
+]
+}
+,{"type":"table","name":"auth_user","database":"lfa","data":
+[
+{"id":"1","password":"pbkdf2_sha256$600000$IOHllmj1twfHzslWsEVNCT$9dWNh2k2oRahNPBeFJG7P7SLDorBf5M3K+qKcn0njJk=","last_login":"2024-09-12 02:51:01.627309","is_superuser":"1","username":"admin","first_name":"","last_name":"","email":"","is_staff":"1","is_active":"1","date_joined":"2024-09-12 02:50:52.635613"}
+]
+}
+,{"type":"table","name":"auth_user_groups","database":"lfa","data":
+[
+
+]
+}
+,{"type":"table","name":"auth_user_user_permissions","database":"lfa","data":
+[
+
+]
+}
+,{"type":"table","name":"django_admin_log","database":"lfa","data":
+[
+{"id":"1","action_time":"2024-09-12 02:51:20.037802","object_id":"1","object_repr":"Teardrop Wind Flag (Fabric)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"2","action_time":"2024-09-12 03:42:37.932036","object_id":"2","object_repr":"Bow Wind Flag (Fabric)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"3","action_time":"2024-09-12 08:23:07.031226","object_id":"3","object_repr":"Fabric Flag (Fabric)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"4","action_time":"2024-09-12 08:23:21.511587","object_id":"4","object_repr":"Air Dancer Tube (Fabric)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"5","action_time":"2024-09-12 08:23:44.069289","object_id":"5","object_repr":"Tension Fabric Wall (Fabric)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"6","action_time":"2024-09-12 08:28:01.123800","object_id":"6","object_repr":"Outdoor Pop-Up Frame (Fabric)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"7","action_time":"2024-09-14 00:53:19.659644","object_id":"7","object_repr":"Fabric Banner Stand (Fabric)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"8","action_time":"2024-09-14 00:53:39.554378","object_id":"8","object_repr":"Speedy Counter (Fabric)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"9","action_time":"2024-09-14 00:53:55.348249","object_id":"9","object_repr":"Display Tex (Fabric)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"10","action_time":"2024-09-14 00:54:11.949192","object_id":"10","object_repr":"Super Twill (Fabric)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"11","action_time":"2024-09-14 00:54:32.223779","object_id":"11","object_repr":"Voile (Fabric)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"12","action_time":"2024-09-14 00:54:47.125896","object_id":"12","object_repr":"Ponge (Fabric)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"13","action_time":"2024-09-14 00:57:48.203492","object_id":"13","object_repr":"Table Cloth (Fabric)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"14","action_time":"2024-09-14 00:58:03.298757","object_id":"14","object_repr":"Chair Cover (Fabric)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"15","action_time":"2024-09-14 00:58:19.265167","object_id":"15","object_repr":"Blockout Fabric (Fabric)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"16","action_time":"2024-09-14 00:58:44.152907","object_id":"16","object_repr":"Roof (Tent)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"17","action_time":"2024-09-14 00:58:58.436343","object_id":"17","object_repr":"Roof + Back (Tent)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"18","action_time":"2024-09-14 00:59:42.255090","object_id":"18","object_repr":"Roof + Back + Side Half Panel (Tent)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"19","action_time":"2024-09-14 00:59:55.258676","object_id":"19","object_repr":"Roof + Back + Full Side Panel (Tent)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"20","action_time":"2024-09-14 01:01:14.325297","object_id":"20","object_repr":"Mastercast (General Sticker)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"21","action_time":"2024-09-14 01:01:36.523366","object_id":"21","object_repr":"White (General Sticker)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"22","action_time":"2024-09-14 01:01:56.612197","object_id":"22","object_repr":"Polymetric (General Sticker)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"23","action_time":"2024-09-14 01:02:25.356134","object_id":"23","object_repr":"Hi-Tac (General Sticker)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"24","action_time":"2024-09-14 01:02:42.266165","object_id":"24","object_repr":"Front Adhesive (General Sticker)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"25","action_time":"2024-09-14 01:02:58.513264","object_id":"25","object_repr":"Clear (General Sticker)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"26","action_time":"2024-09-14 01:03:12.201764","object_id":"26","object_repr":"Frosted (General Sticker)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"27","action_time":"2024-09-14 01:03:33.148368","object_id":"27","object_repr":"One Way Vision (General Sticker)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"28","action_time":"2024-09-14 01:04:04.832112","object_id":"29","object_repr":"General Sticker (General Sticker)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"29","action_time":"2024-09-14 01:04:35.334055","object_id":"28","object_repr":"One Way Vision (General Sticker)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Name\", \"Description\", \"Features\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"30","action_time":"2024-09-14 01:05:20.370758","object_id":"28","object_repr":"Static Cling (General Sticker)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Name\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"31","action_time":"2024-09-14 01:06:47.857921","object_id":"27","object_repr":"One Way Vision (General Sticker)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"32","action_time":"2024-09-14 01:07:15.747496","object_id":"29","object_repr":"White Ink (General Sticker)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Name\", \"Description\", \"Features\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"33","action_time":"2024-09-14 01:07:37.585279","object_id":"30","object_repr":"Light Box (General Sticker)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"34","action_time":"2024-09-14 01:07:58.281188","object_id":"31","object_repr":"Floor Sticker (General Sticker)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"35","action_time":"2024-09-14 01:08:15.379753","object_id":"32","object_repr":"Wall Sticker (General Sticker)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"36","action_time":"2024-09-14 01:08:29.803460","object_id":"33","object_repr":"Vehicle Wrapping (General Sticker)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"37","action_time":"2024-09-14 01:08:52.531979","object_id":"34","object_repr":"Letter Cutting (Computer Die-Cut Sticker)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"38","action_time":"2024-09-14 01:09:15.878463","object_id":"35","object_repr":"Magnetic (Computer Die-Cut Sticker)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"39","action_time":"2024-09-14 01:09:29.848228","object_id":"36","object_repr":"Label (Computer Die-Cut Sticker)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"40","action_time":"2024-09-14 01:09:59.217944","object_id":"37","object_repr":"Backdrop (Computer Die-Cut Sticker)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"41","action_time":"2024-09-14 01:10:14.704613","object_id":"38","object_repr":"Window (Computer Die-Cut Sticker)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"42","action_time":"2024-09-14 01:10:37.131936","object_id":"39","object_repr":"Pops & Photo Frame (Computer Die-Cut Sticker)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"43","action_time":"2024-09-14 01:11:08.004044","object_id":"40","object_repr":"Promotional Table (Computer Die-Cut Sticker)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"44","action_time":"2024-09-14 01:11:50.505257","object_id":"41","object_repr":"Main-Shaped Standee (Computer Die-Cut Sticker)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"45","action_time":"2024-09-14 01:12:06.115491","object_id":"42","object_repr":"Lucky Draw Box (Computer Die-Cut Sticker)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"46","action_time":"2024-09-14 01:12:35.808470","object_id":"43","object_repr":"Foam Eco (Mounting Box)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"47","action_time":"2024-09-14 01:13:00.493020","object_id":"44","object_repr":"Foam Rigit (Mounting Box)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"48","action_time":"2024-09-14 01:13:22.194014","object_id":"45","object_repr":"PP Hollow (Mounting Box)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"49","action_time":"2024-09-14 01:13:44.090286","object_id":"46","object_repr":"PVC Board (Mounting Box)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"50","action_time":"2024-09-14 01:14:00.687401","object_id":"47","object_repr":"Cardboard Stand (Mounting Box)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"51","action_time":"2024-09-14 01:14:16.589642","object_id":"48","object_repr":"Tripod Display (Mounting Box)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"52","action_time":"2024-09-14 01:14:39.648701","object_id":"49","object_repr":"Man-Shaped Standee (Mounting Box)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"53","action_time":"2024-09-14 01:14:57.845733","object_id":"50","object_repr":"Roll-Up Banner (Display System)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"54","action_time":"2024-09-14 01:15:17.308219","object_id":"51","object_repr":"X Frame (Display System)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"55","action_time":"2024-09-14 01:15:41.428988","object_id":"52","object_repr":"T Stand (Display System)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"56","action_time":"2024-09-14 01:16:37.841894","object_id":"53","object_repr":"Handheld Board (Display System)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"57","action_time":"2024-09-14 01:16:55.343639","object_id":"54","object_repr":"Promotional Table (Display System)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"58","action_time":"2024-09-14 01:17:26.181919","object_id":"55","object_repr":"Door Stand (Display System)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"59","action_time":"2024-09-14 01:18:14.950002","object_id":"56","object_repr":"Bunting (Fabric)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"60","action_time":"2024-09-14 01:19:04.531446","object_id":"57","object_repr":"Signboard (Display System)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"61","action_time":"2024-09-14 01:19:22.988252","object_id":"58","object_repr":"Indoor Poster (Poster & Lightbox)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"62","action_time":"2024-09-14 01:19:43.994689","object_id":"59","object_repr":"Outdoor Poster (Poster & Lightbox)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"63","action_time":"2024-09-14 01:20:08.011266","object_id":"60","object_repr":"Light Box Film (Poster & Lightbox)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"64","action_time":"2024-09-14 01:20:24.048301","object_id":"61","object_repr":"Light Box Banner (Poster & Lightbox)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"65","action_time":"2024-09-14 01:20:40.058465","object_id":"62","object_repr":"Portable (Backdrop)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"66","action_time":"2024-09-14 01:20:58.403086","object_id":"63","object_repr":"Fabric Wall (Backdrop)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"67","action_time":"2024-09-14 01:21:32.805825","object_id":"64","object_repr":"Traditional Wall Unit (Backdrop)","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"9","user_id":"1"},
+{"id":"68","action_time":"2024-09-14 01:41:05.961381","object_id":"1","object_repr":"Signboard - Tribal Taste","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"8","user_id":"1"},
+{"id":"69","action_time":"2024-09-14 01:41:17.356217","object_id":"2","object_repr":"BOSS Beauty & Nail Signboard","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"8","user_id":"1"},
+{"id":"70","action_time":"2024-09-14 01:41:28.877528","object_id":"3","object_repr":"Greet Lounge 3D Wall Sticker","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"8","user_id":"1"},
+{"id":"71","action_time":"2024-09-14 01:41:38.196276","object_id":"4","object_repr":"Amazing Things Happen Here Transparent LED Poster Frame","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"8","user_id":"1"},
+{"id":"72","action_time":"2024-09-14 01:41:49.799614","object_id":"5","object_repr":"Teamwork Die Cut Letter Wall Sticker","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"8","user_id":"1"},
+{"id":"73","action_time":"2024-09-14 01:42:00.115877","object_id":"6","object_repr":"Rubina HW (Kuching) SDN BHD 3D Die Cut Signboard","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"8","user_id":"1"},
+{"id":"74","action_time":"2024-09-14 01:42:10.378125","object_id":"7","object_repr":"Dutch Lady Lightbox","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"8","user_id":"1"},
+{"id":"75","action_time":"2024-09-14 01:42:22.997955","object_id":"8","object_repr":"#RWMF2022 Letter Signboard","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"8","user_id":"1"},
+{"id":"76","action_time":"2024-09-14 01:42:34.425223","object_id":"9","object_repr":"dji Lightbox","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"8","user_id":"1"},
+{"id":"77","action_time":"2024-09-14 01:42:44.492748","object_id":"10","object_repr":"Karuna Lightbox Signboard","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"8","user_id":"1"},
+{"id":"78","action_time":"2024-09-14 01:42:54.465267","object_id":"11","object_repr":"NAIM 3D Lightbox","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"8","user_id":"1"},
+{"id":"79","action_time":"2024-09-14 01:43:05.029562","object_id":"12","object_repr":"ZOSO MUSIC Signboard","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"8","user_id":"1"},
+{"id":"80","action_time":"2024-09-14 01:43:16.339830","object_id":"13","object_repr":"bekertilly 3D Die Cut Letter Wall Sticker","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"8","user_id":"1"},
+{"id":"81","action_time":"2024-09-14 01:43:28.124397","object_id":"14","object_repr":"Public Parking Signboard","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"8","user_id":"1"},
+{"id":"82","action_time":"2024-09-14 01:43:38.085243","object_id":"15","object_repr":"DUBS Carpark Notice Board","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"8","user_id":"1"},
+{"id":"83","action_time":"2024-09-14 01:43:48.516114","object_id":"16","object_repr":"DUBS Carpark Please Pay Here Signboard","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"8","user_id":"1"},
+{"id":"84","action_time":"2024-09-14 01:44:02.102052","object_id":"17","object_repr":"Battle of the Barbell 2024 Fabric Portable Banner","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"8","user_id":"1"},
+{"id":"85","action_time":"2024-09-14 01:44:13.004666","object_id":"18","object_repr":"Insta360 Lightbox","action_flag":"1","change_message":"[{\"added\": {}}]","content_type_id":"8","user_id":"1"},
+{"id":"86","action_time":"2024-09-23 02:34:40.396599","object_id":"1","object_repr":"Teardrop Wind Flag (Fabric)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"87","action_time":"2024-09-23 02:34:48.169340","object_id":"2","object_repr":"Bow Wind Flag (Fabric)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"88","action_time":"2024-09-23 02:34:55.789966","object_id":"3","object_repr":"Fabric Flag (Fabric)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"89","action_time":"2024-09-23 02:48:42.761999","object_id":"4","object_repr":"Air Dancer Tube (Fabric)","action_flag":"3","change_message":"","content_type_id":"9","user_id":"1"},
+{"id":"90","action_time":"2024-09-23 02:54:08.856843","object_id":"5","object_repr":"Tension Fabric Wall (Fabric)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"91","action_time":"2024-09-23 02:58:32.136958","object_id":"6","object_repr":"Outdoor Pop-Up Frame (Fabric)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"92","action_time":"2024-09-23 03:05:32.707029","object_id":"7","object_repr":"Fabric Banner Stand (Fabric)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"93","action_time":"2024-09-23 03:30:51.307936","object_id":"8","object_repr":"Speedy Counter (Fabric)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"94","action_time":"2024-09-23 03:54:54.337864","object_id":"9","object_repr":"Display Tex (Fabric)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"95","action_time":"2024-09-23 05:02:53.744289","object_id":"13","object_repr":"Table Cloth (Fabric)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"96","action_time":"2024-09-23 05:08:31.053711","object_id":"14","object_repr":"Chair Cover (Fabric)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"97","action_time":"2024-09-23 05:22:45.329126","object_id":"56","object_repr":"Bunting (Fabric)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"98","action_time":"2024-09-23 05:33:45.702028","object_id":"17","object_repr":"Roof + Back (Tent)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"99","action_time":"2024-09-23 05:34:03.013418","object_id":"16","object_repr":"Roof (Tent)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"100","action_time":"2024-09-23 05:38:44.184149","object_id":"18","object_repr":"Roof + Back + Side Half Panel (Tent)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"101","action_time":"2024-09-23 05:38:51.109614","object_id":"19","object_repr":"Roof + Back + Full Side Panel (Tent)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"102","action_time":"2024-09-23 06:49:09.817642","object_id":"62","object_repr":"Portable (Backdrop)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"103","action_time":"2024-09-23 06:57:26.697432","object_id":"63","object_repr":"Fabric Wall (Backdrop)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"104","action_time":"2024-09-23 07:10:53.202262","object_id":"64","object_repr":"Traditional Wall Unit (Backdrop)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"105","action_time":"2024-09-23 07:29:35.014449","object_id":"64","object_repr":"Traditional Wall Unit (Backdrop)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"106","action_time":"2024-09-23 07:29:48.472652","object_id":"61","object_repr":"Light Box Banner (Poster & Lightbox)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"107","action_time":"2024-09-23 07:30:00.750287","object_id":"59","object_repr":"Outdoor Poster (Poster & Lightbox)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"108","action_time":"2024-09-23 07:30:16.552363","object_id":"62","object_repr":"Portable (Backdrop)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"109","action_time":"2024-09-23 07:30:57.710505","object_id":"58","object_repr":"Indoor Poster (Poster & Lightbox)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"110","action_time":"2024-09-23 07:31:09.207382","object_id":"59","object_repr":"Outdoor Poster (Poster & Lightbox)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"111","action_time":"2024-09-23 07:31:37.128811","object_id":"60","object_repr":"Light Box Film (Poster & Lightbox)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"112","action_time":"2024-09-23 07:32:01.903816","object_id":"61","object_repr":"Light Box Banner (Poster & Lightbox)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"113","action_time":"2024-09-23 07:45:11.573229","object_id":"50","object_repr":"Roll-Up Banner (Display System)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"114","action_time":"2024-09-23 07:50:44.102628","object_id":"51","object_repr":"X Frame (Display System)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"115","action_time":"2024-09-23 07:56:26.772499","object_id":"52","object_repr":"T Stand (Display System)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"116","action_time":"2024-09-23 08:06:47.645789","object_id":"53","object_repr":"Handheld Board (Display System)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"117","action_time":"2024-09-23 08:10:38.153255","object_id":"54","object_repr":"Promotional Table (Display System)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"118","action_time":"2024-09-23 08:18:12.338138","object_id":"55","object_repr":"Door Stand (Display System)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"119","action_time":"2024-09-23 08:32:02.628467","object_id":"57","object_repr":"Signboard (Display System)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"120","action_time":"2024-09-24 00:36:31.153315","object_id":"10","object_repr":"Super Twill (Fabric)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"121","action_time":"2024-09-24 00:39:44.077482","object_id":"11","object_repr":"Voile (Fabric)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"122","action_time":"2024-09-24 00:44:50.228651","object_id":"12","object_repr":"Ponge (Fabric)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"},
+{"id":"123","action_time":"2024-09-24 00:50:41.652200","object_id":"15","object_repr":"Blockout Fabric (Fabric)","action_flag":"2","change_message":"[{\"changed\": {\"fields\": [\"Productid\", \"Image\"]}}]","content_type_id":"9","user_id":"1"}
+]
+}
+,{"type":"table","name":"django_content_type","database":"lfa","data":
+[
+{"id":"1","app_label":"admin","model":"logentry"},
+{"id":"3","app_label":"auth","model":"group"},
+{"id":"2","app_label":"auth","model":"permission"},
+{"id":"4","app_label":"auth","model":"user"},
+{"id":"5","app_label":"contenttypes","model":"contenttype"},
+{"id":"7","app_label":"main","model":"blogpost"},
+{"id":"8","app_label":"main","model":"portfolioitem"},
+{"id":"9","app_label":"main","model":"product"},
+{"id":"10","app_label":"main","model":"service"},
+{"id":"6","app_label":"sessions","model":"session"}
+]
+}
+,{"type":"table","name":"django_migrations","database":"lfa","data":
+[
+{"id":"1","app":"contenttypes","name":"0001_initial","applied":"2024-09-12 02:49:27.275170"},
+{"id":"2","app":"auth","name":"0001_initial","applied":"2024-09-12 02:49:27.993929"},
+{"id":"3","app":"admin","name":"0001_initial","applied":"2024-09-12 02:49:28.181433"},
+{"id":"4","app":"admin","name":"0002_logentry_remove_auto_add","applied":"2024-09-12 02:49:28.181433"},
+{"id":"5","app":"admin","name":"0003_logentry_add_action_flag_choices","applied":"2024-09-12 02:49:28.212669"},
+{"id":"6","app":"contenttypes","name":"0002_remove_content_type_name","applied":"2024-09-12 02:49:28.290795"},
+{"id":"7","app":"auth","name":"0002_alter_permission_name_max_length","applied":"2024-09-12 02:49:28.353299"},
+{"id":"8","app":"auth","name":"0003_alter_user_email_max_length","applied":"2024-09-12 02:49:28.384548"},
+{"id":"9","app":"auth","name":"0004_alter_user_username_opts","applied":"2024-09-12 02:49:28.384548"},
+{"id":"10","app":"auth","name":"0005_alter_user_last_login_null","applied":"2024-09-12 02:49:28.447049"},
+{"id":"11","app":"auth","name":"0006_require_contenttypes_0002","applied":"2024-09-12 02:49:28.447049"},
+{"id":"12","app":"auth","name":"0007_alter_validators_add_error_messages","applied":"2024-09-12 02:49:28.447049"},
+{"id":"13","app":"auth","name":"0008_alter_user_username_max_length","applied":"2024-09-12 02:49:28.478346"},
+{"id":"14","app":"auth","name":"0009_alter_user_last_name_max_length","applied":"2024-09-12 02:49:28.493920"},
+{"id":"15","app":"auth","name":"0010_alter_group_name_max_length","applied":"2024-09-12 02:49:28.525177"},
+{"id":"16","app":"auth","name":"0011_update_proxy_permissions","applied":"2024-09-12 02:49:28.525177"},
+{"id":"17","app":"auth","name":"0012_alter_user_first_name_max_length","applied":"2024-09-12 02:49:28.525177"},
+{"id":"18","app":"main","name":"0001_initial","applied":"2024-09-12 02:49:28.603297"},
+{"id":"19","app":"main","name":"0002_product_is_featured","applied":"2024-09-12 02:49:28.634557"},
+{"id":"20","app":"main","name":"0003_alter_product_category","applied":"2024-09-12 02:49:28.634557"},
+{"id":"21","app":"main","name":"0004_product_features","applied":"2024-09-12 02:49:28.650173"},
+{"id":"22","app":"main","name":"0005_alter_product_image","applied":"2024-09-12 02:49:28.681428"},
+{"id":"23","app":"sessions","name":"0001_initial","applied":"2024-09-12 02:49:28.712670"}
+]
+}
+,{"type":"table","name":"django_session","database":"lfa","data":
+[
+{"session_key":"70nkqib7pjm5rogb7ml4j8pzggy2v0ut","session_data":".eJxVjMsOwiAQRf-FtSEMLY-6dO83EIZhpGogKe3K-O_apAvd3nPOfYkQt7WEreclzCTOAsTpd8OYHrnugO6x3ppMra7LjHJX5EG7vDbKz8vh_h2U2Mu3ttaZRKQZwA7Oo1eAJqXoQKE1ZjATj5zRodKQ_aSJIitPyKyBxsGJ9wfaWDf_:1soZvB:tV_-Ybt6WbvEBJ1bSHp-CHOEK7nF4P9sRIOTO1qvelQ","expire_date":"2024-09-26 02:51:01.630309"}
+]
+}
+,{"type":"table","name":"main_blogpost","database":"lfa","data":
+[
+
+]
+}
+,{"type":"table","name":"main_portfolioitem","database":"lfa","data":
+[
+{"id":"1","title":"Signboard - Tribal Taste","description":"A striking and culturally inspired signboard designed to capture the essence of tribal art. This signboard features intricate patterns and vibrant colors, making it a focal point for any establishment that celebrates indigenous or ethnic cuisine.","image":"portfolio\/lfa1.png"},
+{"id":"2","title":"BOSS Beauty & Nail Signboard","description":"An elegant and stylish signboard for beauty salons and nail studios. Featuring a sleek design with a modern touch, it’s crafted to highlight the luxury and sophistication of the BOSS Beauty & Nail brand.","image":"portfolio\/lfa2.png"},
+{"id":"3","title":"Greet Lounge 3D Wall Sticker","description":"Add a dynamic and welcoming touch to your space with this 3D wall sticker. Featuring a stylish and contemporary design, it creates a sense of depth and dimension, perfect for enhancing the ambiance of a lounge or social area.","image":"portfolio\/lfa3.png"},
+{"id":"4","title":"Amazing Things Happen Here Transparent LED Poster Frame","description":"A modern and eye-catching LED poster frame with a transparent design that illuminates your posters. Ideal for showcasing events or promotions, it provides a vibrant glow that makes any message stand out.","image":"portfolio\/lfa4.png"},
+{"id":"5","title":"Teamwork Die Cut Letter Wall Sticker","description":"A motivational wall sticker featuring die-cut letters that spell out “Teamwork.” This design emphasizes collaboration and unity, making it perfect for office spaces, team rooms, or any environment where teamwork is key.","image":"portfolio\/lfa5.png"},
+{"id":"6","title":"Rubina HW (Kuching) SDN BHD 3D Die Cut Signboard","description":"A sophisticated 3D die-cut signboard showcasing the Rubina HW (Kuching) SDN BHD logo. Its dimensional design adds depth and prominence, ideal for corporate or commercial spaces.","image":"portfolio\/lfa6.png"},
+{"id":"7","title":"Dutch Lady Lightbox","description":"A high-impact lightbox featuring the Dutch Lady brand. With its illuminated design, this lightbox ensures that the Dutch Lady logo and messaging are prominently displayed, drawing attention in any retail or promotional setting.","image":"portfolio\/lfa7.png"},
+{"id":"8","title":"#RWMF2022 Letter Signboard","description":"A bold and vibrant signboard celebrating the #RWMF2022 event. Perfect for festivals or special occasions, this signboard captures the spirit of the event with its eye-catching design and celebratory flair.","image":"portfolio\/lfa8.png"},
+{"id":"9","title":"dji Lightbox","description":"A sleek and modern lightbox showcasing the dji logo. This illuminated display enhances brand visibility and is ideal for retail spaces or events where showcasing high-tech equipment or services is key.","image":"portfolio\/lfa9.png"},
+{"id":"10","title":"Karuna Lightbox Signboard","description":"A stylish lightbox signboard featuring the Karuna brand. With its bright, backlit design, it effectively highlights the brand name and logo, making it an attractive addition to any storefront or business.","image":"portfolio\/lfa10.png"},
+{"id":"11","title":"NAIM 3D Lightbox","description":"A sophisticated 3D lightbox signboard for NAIM, designed to provide a striking visual impact. The combination of 3D elements and illumination ensures that the NAIM logo stands out, making it perfect for corporate or commercial displays.","image":"portfolio\/lfa11.png"},
+{"id":"12","title":"ZOSO MUSIC Signboard","description":"A vibrant and engaging signboard for ZOSO MUSIC. Featuring a bold design that captures the essence of music, this signboard is ideal for music venues, studios, or promotional events.","image":"portfolio\/lfa12.png"},
+{"id":"13","title":"bekertilly 3D Die Cut Letter Wall Sticker","description":"A creative and eye-catching die-cut letter wall sticker for bekertilly. Its 3D design adds depth and texture to the wall, making it a distinctive feature for branding or decorative purposes.","image":"portfolio\/lfa13.png"},
+{"id":"14","title":"Public Parking Signboard","description":"A clear and straightforward signboard indicating public parking areas. Designed for maximum visibility and readability, it ensures that drivers can easily locate parking spots in busy areas.","image":"portfolio\/lfa14.png"},
+{"id":"15","title":"DUBS Carpark Notice Board","description":"A practical notice board for the DUBS carpark, designed to provide essential information and updates to drivers. Its clean design and durable construction make it a reliable addition to any parking facility.","image":"portfolio\/lfa15.png"},
+{"id":"16","title":"DUBS Carpark Please Pay Here Signboard","description":"A functional and clear signboard instructing drivers to make payments at the designated area. With a straightforward design, it ensures that payment procedures are communicated effectively.","image":"portfolio\/lfa16.png"},
+{"id":"17","title":"Battle of the Barbell 2024 Fabric Portable Banner","description":"A high-quality, portable fabric banner designed for the Battle of the Barbell 2024 event. Featuring vibrant graphics and a durable fabric, this banner is perfect for promotional use at competitions or fitness events.","image":"portfolio\/lfa17.png"},
+{"id":"18","title":"Insta360 Lightbox","description":"A modern lightbox showcasing the Insta360 brand. With its sleek, illuminated design, it highlights the brand’s logo and products, making it an ideal display solution for tech events or retail settings.","image":"portfolio\/lfa18.png"}
+]
+}
+,{"type":"table","name":"main_product","database":"lfa","data":
+[
+{"productid":"1","name":"Teardrop Wind Flag","description":"Enhance visibility with our Teardrop Wind Flag, perfect for events, storefronts, and outdoor advertising. Its unique teardrop shape ensures maximum visibility even in low winds.","category":"Fabric","image":"products\/1teardropflag.png","is_featured":"1","features":"High-visibility teardrop design,Durable, weather-resistant fabric,Easy setup with a variety of base options,Customizable with your logo or message"},
+{"productid":"2","name":"Bow Wind Flag","description":"The Bow Wind Flag combines style and functionality, ideal for grabbing attention at trade shows, promotions, and outdoor events. Its bow shape provides a striking and elegant display.","category":"Fabric","image":"products\/2bowwindflag.png","is_featured":"0","features":"Elegant bow shape for high-impact visibility,Robust, all-weather fabric,Lightweight and portable,Fully customizable for branding"},
+{"productid":"3","name":"Fabric Flag","description":"Our Fabric Flag offers a versatile and durable solution for promotional needs. Suitable for both indoor and outdoor use, this flag is perfect for businesses, events, and exhibitions.","category":"Fabric","image":"products\/3fabricflag.png","is_featured":"1","features":"High-quality, vibrant fabric material,Various sizes and finishing options,Weather-resistant and long-lasting,Customizable printing for maximum impact"},
+{"productid":"5","name":"Tension Fabric Wall","description":"Create a stunning visual backdrop with our Tension Fabric Wall. Perfect for trade shows, exhibitions, and retail displays, this product features a sleek, wrinkle-free appearance.","category":"Fabric","image":"products\/4tensionfabricwall.png","is_featured":"1","features":"Create a stunning visual backdrop with our Tension Fabric Wall. Perfect for trade shows, exhibitions, and retail displays, this product features a sleek, wrinkle-free appearance."},
+{"productid":"6","name":"Outdoor Pop-Up Frame","description":"The Outdoor Pop-Up Frame is an ideal solution for temporary outdoor displays, offering quick setup and a sturdy frame for promotional graphics.","category":"Fabric","image":"products\/5popupframe.png","is_featured":"1","features":"Quick and easy setup,Durable, weather-resistant frame,Customizable fabric graphics,Compact and portable design"},
+{"productid":"7","name":"Fabric Banner Stand","description":"Showcase your brand with our Fabric Banner Stand, perfect for trade shows, events, and retail environments. The stand features a lightweight design and high-quality fabric for vibrant graphics.","category":"Fabric","image":"products\/6fabricbannerstand.png","is_featured":"0","features":"Lightweight and portable,High-quality, custom-printed fabric,Adjustable height options,Quick and easy assembly"},
+{"productid":"8","name":"Speedy Counter","description":"The Speedy Counter provides an efficient and stylish way to promote your brand at trade shows and events. Featuring a sleek design and easy assembly, it’s perfect for engaging customers.","category":"Fabric","image":"products\/7speedycounter.png","is_featured":"1","features":"Quick setup with lightweight construction,Customizable graphics,Compact and portable,Durable and stable design"},
+{"productid":"9","name":"Display Tex","description":"Display Tex offers a premium fabric option for high-resolution graphics and vibrant colors. Ideal for various display applications including trade shows and exhibitions.","category":"Fabric","image":"products\/8displaytex.png","is_featured":"1","features":"High-resolution, vivid printing,Durable, wrinkle-resistant fabric,Versatile for various display formats,Easy to clean and maintain"},
+{"productid":"10","name":"Super Twill","description":"Super Twill fabric combines durability with a sophisticated look, making it ideal for flags, banners, and display graphics. This fabric is perfect for high-impact visuals.","category":"Fabric","image":"products\/supertwill.jpg","is_featured":"0","features":"Durable, high-quality twill fabric,Excellent color retention,Ideal for indoor and outdoor use,Customizable for various applications"},
+{"productid":"11","name":"Voile","description":"Voile fabric offers a light and airy texture, ideal for elegant banners, window displays, and soft signage. It’s perfect for adding a touch of sophistication to any display.","category":"Fabric","image":"products\/voile.jpg","is_featured":"1","features":"Lightweight, sheer fabric,Soft texture with vibrant color options,Suitable for both indoor and outdoor use,Customizable for various designs"},
+{"productid":"12","name":"Ponge","description":"Ponge fabric is a versatile, high-quality option for flags, banners, and displays. Known for its smooth finish and durability, it's ideal for creating professional-grade promotional materials.","category":"Fabric","image":"products\/ponge.jpg","is_featured":"0","features":"Smooth, high-quality finish,Durable and long-lasting,Excellent for detailed prints,Suitable for various display applications"},
+{"productid":"13","name":"Table Cloth","description":"Our Table Cloth is designed to enhance the appearance of your trade show or event setup. Available in various sizes and customizable with your brand's logo or design.","category":"Fabric","image":"products\/9tablecloth.png","is_featured":"1","features":"High-quality, wrinkle-resistant fabric,Customizable with full-color prints,Fits standard table sizes,Easy to clean and maintain"},
+{"productid":"14","name":"Chair Cover","description":"Transform the look of any event with our stylish Chair Covers. Perfect for weddings, conferences, and trade shows, these covers add elegance and professionalism to your setup.","category":"Fabric","image":"products\/10chaircloth.png","is_featured":"0","features":"Stretchable, wrinkle-resistant fabric,Customizable with various colors and designs,Fits most standard chair sizes,Easy to install and remove"},
+{"productid":"15","name":"Blockout Fabric","description":"Blockout Fabric is ideal for creating banners and displays that require complete opacity. Perfect for backdrops and signage where light-blocking is essential.","category":"Fabric","image":"products\/blockout.jpg","is_featured":"1","features":"100% opacity for complete light blocking,Durable and resistant to fading,Ideal for both indoor and outdoor use,Customizable for various display needs"},
+{"productid":"16","name":"Roof","description":"Our Tent Roof provides essential protection from the elements, ideal for outdoor events, markets, and fairs. Constructed for durability and easy assembly.","category":"Tent","image":"products\/21roof.png","is_featured":"1","features":"Weather-resistant material,Quick and easy to install,Available in various sizes,Customizable with graphics"},
+{"productid":"17","name":"Roof + Back","description":"The Roof + Back Tent option offers complete coverage for your outdoor setup, including protection from rain and wind. Perfect for market stalls, events, and exhibitions.","category":"Tent","image":"products\/22roofback.png","is_featured":"1","features":"Includes roof and back panel for full coverage,Durable, weather-resistant fabric,Easy assembly with secure fittings,Customizable for branding"},
+{"productid":"18","name":"Roof + Back + Side Half Panel","description":"The Roof + Back + Side Half Panel Tent provides enhanced protection and coverage with additional side paneling, ideal for more extensive outdoor setups and exhibits.","category":"Tent","image":"products\/23roofbackhalfside.png","is_featured":"0","features":"Includes roof, back, and half-side panels,Weather-resistant and durable fabric,Easy to set up and disassemble,Customizable with your design or logo"},
+{"productid":"19","name":"Roof + Back + Full Side Panel","description":"Complete your outdoor event setup with the Roof + Back + Full Side Panel Tent, offering comprehensive protection and privacy with full side coverage.","category":"Tent","image":"products\/24roofbackside.png","is_featured":"1","features":"Includes roof, back, and full-side panels,Superior weather resistance,Easy to assemble and disassemble,Customizable for branding and design"},
+{"productid":"20","name":"Mastercast","description":"Mastercast stickers offer high-quality, durable adhesion for a range of surfaces. Perfect for promotional materials, product labels, and custom graphics.","category":"General Sticker","image":"","is_featured":"1","features":"Durable adhesive for various surfaces,High-quality printing,Available in multiple sizes and finishes,Ideal for long-term use"},
+{"productid":"21","name":"White","description":"White stickers provide a clean, versatile base for custom designs and branding. Ideal for product labels, decals, and promotional materials.","category":"General Sticker","image":"","is_featured":"0","features":"Crisp, white base for clear printing,Strong adhesive properties,Suitable for various surfaces,Customizable with high-resolution prints"},
+{"productid":"22","name":"Polymetric","description":"Polymetric stickers offer excellent durability and flexibility, making them perfect for outdoor applications and high-wear environments.","category":"General Sticker","image":"","is_featured":"1","features":"High durability for outdoor use,Flexible and weather-resistant,Customizable with vibrant graphics,Long-lasting adhesion"},
+{"productid":"23","name":"Hi-Tac","description":"Hi-Tac stickers are designed for high-adhesion needs, ensuring your graphics stay in place even in challenging conditions. Ideal for heavy-duty applications.","category":"General Sticker","image":"","is_featured":"0","features":"High-adhesion properties,Stays secure in various conditions,Customizable with high-quality prints,Suitable for both indoor and outdoor use"},
+{"productid":"24","name":"Front Adhesive","description":"Front Adhesive stickers are perfect for window graphics and other applications where the adhesive needs to be on the front of the sticker for a clean look.","category":"General Sticker","image":"","is_featured":"1","features":"Adhesive on the front for window applications,High-quality, clear printing,Durable and weather-resistant,Easy to apply and remove"},
+{"productid":"25","name":"Clear","description":"Clear stickers offer a seamless look by blending with the background. Ideal for adding subtle branding or decorative elements to any surface.","category":"General Sticker","image":"","is_featured":"1","features":"Transparent base for a seamless appearance,High-resolution custom printing,Durable and weather-resistant,Easy to apply and remove"},
+{"productid":"26","name":"Frosted","description":"Frosted stickers provide a translucent, frosted look that adds a touch of elegance to your graphics. Perfect for privacy and decorative purposes.","category":"General Sticker","image":"","is_featured":"0","features":"Translucent, frosted finish,Adds a sophisticated touch to designs,Durable and weather-resistant,Easy to apply and maintain"},
+{"productid":"27","name":"One Way Vision","description":"One Way Vision stickers are ideal for window graphics, allowing visibility from the inside while displaying your design on the outside. Perfect for storefronts and vehicle windows.","category":"General Sticker","image":"","is_featured":"1","features":"Perforated design for visibility from one side,High-quality, weather-resistant material,Easy to apply and remove,Customizable with vibrant graphics"},
+{"productid":"28","name":"Static Cling","description":"Static Cling stickers are perfect for temporary displays and easy repositioning. Ideal for window graphics, promotional signage, and retail displays.","category":"General Sticker","image":"","is_featured":"0","features":"No adhesive; clings to surfaces with static,Easy to reposition and remove,Ideal for smooth surfaces like windows,Customizable with high-quality prints"},
+{"productid":"29","name":"White Ink","description":"White Ink stickers offer a unique printing option, providing a bright and opaque base for vibrant colors on dark or transparent backgrounds.","category":"General Sticker","image":"","is_featured":"0","features":"Bright, opaque white ink for vivid colors,Ideal for dark or transparent surfaces,Durable and weather-resistant,High-quality, customizable prints"},
+{"productid":"30","name":"Light Box","description":"Light Box stickers are designed for use with illuminated displays, providing clear and vibrant graphics that shine through when backlit.","category":"General Sticker","image":"","is_featured":"1","features":"Designed for backlit applications,High-resolution, vibrant printing,Durable and weather-resistant,Customizable with your graphics"},
+{"productid":"31","name":"Floor Sticker","description":"Floor Stickers are perfect for in-store promotions, wayfinding, and branding on floors. Made to withstand foot traffic and adhere securely to various floor types.","category":"General Sticker","image":"","is_featured":"0","features":"Durable and slip-resistant,Ideal for high-traffic areas,Easy to apply and remove without residue,Customizable with high-quality prints"},
+{"productid":"32","name":"Wall Sticker","description":"Wall Stickers offer a versatile and easy-to-install solution for decorating and branding walls. Ideal for both residential and commercial spaces.","category":"General Sticker","image":"","is_featured":"1","features":"Easy to apply and remove,High-quality, durable prints,Suitable for smooth wall surfaces,Customizable with various designs and sizes"},
+{"productid":"33","name":"Vehicle Wrapping","description":"Vehicle Wrapping provides a full-color, eye-catching way to advertise on your vehicle. Ideal for businesses looking to turn their vehicles into mobile billboards.","category":"General Sticker","image":"","is_featured":"1","features":"Full-color, high-resolution printing,Durable and weather-resistant,Easy to apply and remove,Customizable to fit various vehicle sizes and shapes"},
+{"productid":"34","name":"Letter Cutting","description":"Letter Cutting stickers offer precise, die-cut letters for custom signage and branding. Ideal for creating clean and professional text-based designs.","category":"Computer Die-Cut Sticker","image":"","is_featured":"1","features":"Precise die-cut letters,Ideal for custom text-based designs,High-quality, durable materials,Available in various fonts and sizes"},
+{"productid":"35","name":"Magnetic","description":"Magnetic stickers are perfect for temporary signage and promotions. Ideal for vehicles, metal surfaces, and magnetic boards.","category":"Computer Die-Cut Sticker","image":"","is_featured":"0","features":"Magnetic backing for easy attachment,Removable and repositionable,Durable and weather-resistant,Customizable with high-resolution prints"},
+{"productid":"36","name":"Label","description":"Label stickers are designed for product labeling and organization. Available in various shapes and sizes, they offer a professional look for any application.","category":"Computer Die-Cut Sticker","image":"","is_featured":"1","features":"Versatile shapes and sizes,High-quality, durable adhesive,Customizable with your design,Ideal for product labels and organizational needs"},
+{"productid":"37","name":"Backdrop","description":"Backdrop stickers are perfect for creating striking backgrounds at events, trade shows, and exhibitions. Customizable to fit any space and design.","category":"Computer Die-Cut Sticker","image":"","is_featured":"0","features":"Customizable to fit any space,High-quality, vibrant printing,Easy to apply and remove,Durable and suitable for various surfaces"},
+{"productid":"38","name":"Window","description":"Window stickers are designed for use on glass surfaces, ideal for storefronts, offices, and promotional displays. They offer clear visibility and vibrant colors.","category":"Computer Die-Cut Sticker","image":"","is_featured":"1","features":"Ideal for glass and transparent surfaces,High-resolution, vivid printing,Easy to apply and remove,Customizable with various designs"},
+{"productid":"39","name":"Pops & Photo Frame","description":"Pops & Photo Frame stickers offer a fun and interactive way to display photos and promotions. Ideal for events, retail displays, and personal use.","category":"Computer Die-Cut Sticker","image":"","is_featured":"0","features":"Interactive and customizable designs,High-quality printing for clear images,Easy to apply and remove,Suitable for various surfaces"},
+{"productid":"40","name":"Promotional Table","description":"Promotional Table stickers are designed to enhance tables at events and trade shows. Customizable with your brand’s logo or message for maximum visibility.","category":"Computer Die-Cut Sticker","image":"","is_featured":"1","features":"Customizable with high-quality prints,Durable and easy to clean,Ideal for event and trade show tables,Available in various sizes and shapes"},
+{"productid":"41","name":"Main-Shaped Standee","description":"The Main-Shaped Standee offers a distinctive, custom-shaped display for events and promotions. Ideal for drawing attention and showcasing your brand.","category":"Computer Die-Cut Sticker","image":"","is_featured":"1","features":"Custom-shaped for unique displays,High-quality, durable materials,Easy to set up and transport,Ideal for events and trade shows"},
+{"productid":"42","name":"Lucky Draw Box","description":"The Lucky Draw Box is perfect for promotional events and raffles. Customizable with your branding and designed to attract participants.","category":"Computer Die-Cut Sticker","image":"","is_featured":"0","features":"Customizable with your brand’s design,Durable and easy to set up,Ideal for promotional draws and raffles,Portable and eye-catching"},
+{"productid":"43","name":"Foam Eco","description":"Foam Eco mounting boxes provide an eco-friendly solution for displays and presentations. Made from recycled materials, they are both sustainable and effective.","category":"Mounting Box","image":"","is_featured":"1","features":"Made from eco-friendly materials,Lightweight and durable,Easy to assemble and customize,Ideal for presentations and displays"},
+{"productid":"44","name":"Foam Rigit","description":"Foam Rigit mounting boxes offer sturdy support for various display applications. Ideal for trade shows, exhibitions, and promotional events.","category":"Mounting Box","image":"","is_featured":"0","features":"Rigid foam construction for durability,Lightweight and easy to handle,Customizable for different display needs,Easy to assemble and disassemble"},
+{"productid":"45","name":"PP Hollow","description":"PP Hollow mounting boxes provide a durable and lightweight option for displays. Perfect for trade shows, exhibitions, and temporary setups.","category":"Mounting Box","image":"","is_featured":"0","features":"Lightweight and durable polypropylene material,Easy to assemble and transport,Customizable with various sizes and designs,Suitable for both indoor and outdoor use"},
+{"productid":"46","name":"PVC Board","description":"PVC Board mounting boxes offer a strong, rigid option for displays. Ideal for signs, presentations, and promotional materials.","category":"Mounting Box","image":"","is_featured":"1","features":"Sturdy PVC construction,Customizable with high-quality prints,Durable and weather-resistant,Easy to set up and transport"},
+{"productid":"47","name":"Cardboard Stand","description":"Cardboard Stands are an economical and versatile option for displays and promotional materials. Ideal for temporary setups and lightweight displays.","category":"Mounting Box","image":"","is_featured":"0","features":"Cost-effective and versatile,Easy to assemble and customize,Lightweight and portable,Suitable for short-term use"},
+{"productid":"48","name":"Tripod Display","description":"Tripod Displays offer a portable and adjustable solution for showcasing graphics and signage. Ideal for trade shows, presentations, and events.","category":"Mounting Box","image":"","is_featured":"1","features":"Adjustable height and angle,Lightweight and easy to transport,Customizable with various graphics,Sturdy and stable design"},
+{"productid":"49","name":"Man-Shaped Standee","description":"The Man-Shaped Standee is a life-sized, eye-catching display ideal for promotions and events. Customizable with your branding for maximum impact.","category":"Mounting Box","image":"","is_featured":"1","features":"Life-sized, customizable design,High-quality, durable materials,Easy to set up and transport,Ideal for promotions and events"},
+{"productid":"50","name":"Roll-Up Banner","description":"The Roll-Up Banner is a portable and easy-to-use display solution for trade shows, events, and presentations. Featuring a retractable design for convenience.","category":"Display System","image":"products\/6fabricbannerstand_8NkwBsi.png","is_featured":"1","features":"Features,Retractable design for easy setup,High-quality, customizable graphics,Lightweight and portable"},
+{"productid":"51","name":"X Frame","description":"The X Frame display system offers a stable and adjustable solution for showcasing graphics and banners. Ideal for trade shows, retail spaces, and events.","category":"Display System","image":"products\/62xstand.png","is_featured":"1","features":"Features,Adjustable frame for various sizes,Stable and durable construction,Customizable with high-resolution graphics"},
+{"productid":"52","name":"T Stand","description":"T Stand displays provide a versatile and easy-to-use solution for promoting your brand. Perfect for indoor and outdoor events, retail spaces, and trade shows.","category":"Display System","image":"products\/63tstand.png","is_featured":"0","features":"Features,T-shaped stand for stable display,Customizable with various graphics,Lightweight and portable"},
+{"productid":"53","name":"Handheld Board","description":"Handheld Boards are ideal for mobile promotions and events. Lightweight and customizable, they offer a practical solution for engaging with your audience.","category":"Display System","image":"products\/64handheldboard.png","is_featured":"1","features":"Features,Lightweight and easy to carry,Customizable with your design or message,Ideal for mobile promotions and events"},
+{"productid":"54","name":"Promotional Table","description":"The Promotional Table system enhances your trade show or event setup with a stylish and functional display. Customizable with your branding for a professional look.","category":"Display System","image":"products\/65promotionaltable.png","is_featured":"1","features":"Features,Customizable with high-quality prints,Easy to assemble and disassemble,Durable and stable design"},
+{"productid":"55","name":"Door Stand","description":"The Door Stand is perfect for promoting messages or advertisements directly on doorways. Customizable and versatile for various marketing needs.","category":"Display System","image":"products\/66doorstand.png","is_featured":"0","features":"Features,Customizable with your design,Easy to attach to door surfaces,Durable and weather-resistant"},
+{"productid":"56","name":"Bunting","description":"Bunting are perfect for decorating events, fairs, and storefronts. Available in various colors and designs to enhance your promotional activities.","category":"Fabric","image":"products\/12bunting.png","is_featured":"1","features":"Features,Vibrant colors and designs,Lightweight and easy to hang,Durable, weather-resistant fabric"},
+{"productid":"57","name":"Signboard","description":"Signboards offer a robust and professional solution for advertising and directional signage. Ideal for businesses, events, and public spaces.","category":"Display System","image":"products\/67signboard.png","is_featured":"1","features":"Features,High-quality, durable construction,Customizable with various graphics,Suitable for both indoor and outdoor use"},
+{"productid":"58","name":"Indoor Poster","description":"Indoor Posters are perfect for promoting events, products, and messages within indoor environments. Customizable with high-resolution graphics for maximum impact.","category":"Poster & Lightbox","image":"products\/71indoorposter.png","is_featured":"1","features":"High-quality printing for vibrant colors,Ideal for indoor use,Customizable sizes and designs,Durable and easy to install"},
+{"productid":"59","name":"Outdoor Poster","description":"Outdoor Posters are designed to withstand weather conditions while delivering impactful advertising. Ideal for outdoor events, promotions, and signage.","category":"Poster & Lightbox","image":"products\/72outdoorposter.png","is_featured":"1","features":"Weather-resistant material,High-resolution, durable printing,Customizable for various outdoor settings,Easy to install and maintain"},
+{"productid":"60","name":"Light Box Film","description":"Light Box Film is designed for use with illuminated light boxes, providing vibrant and eye-catching graphics that stand out in any setting.","category":"Poster & Lightbox","image":"products\/73lightboxposter_QOdoeU4.png","is_featured":"1","features":"Designed for backlit light boxes,High-quality, vibrant printing,Durable and weather-resistant,Customizable with your graphics"},
+{"productid":"61","name":"Light Box Banner","description":"Light Box Banners offer a dynamic way to display your message with backlighting, ensuring high visibility and impact. Ideal for advertising and promotional displays.","category":"Poster & Lightbox","image":"products\/74lightboxbanner_ANiONvK.png","is_featured":"1","features":"High-resolution, backlit printing,Durable and weather-resistant,Customizable sizes and designs,Easy to install and replace"},
+{"productid":"62","name":"Portable","description":"Portable Backdrops are ideal for events and trade shows, providing a professional and easy-to-transport solution for showcasing your brand or message.","category":"Backdrop","image":"products\/81portablebackdrop_ffCN7qw.png","is_featured":"1","features":"Features,Lightweight and easy to carry,Quick setup and takedown,Customizable with high-resolution prints"},
+{"productid":"63","name":"Fabric Wall","description":"The Fabric Wall backdrop offers a sleek and elegant solution for trade shows, exhibitions, and presentations. Made from high-quality fabric for a smooth finish.","category":"Backdrop","image":"products\/82fabricwall.png","is_featured":"1","features":"Features,High-quality, wrinkle-resistant fabric,Customizable with your design,Easy to assemble and disassemble"},
+{"productid":"64","name":"Traditional Wall Unit","description":"The Traditional Wall Unit provides a classic and robust display option for exhibitions and trade shows. Features a durable construction for a professional presentation.","category":"Backdrop","image":"products\/83traditionalwall_7STJuZR.png","is_featured":"1","features":"Features,Sturdy and durable construction,Customizable with various graphics,Ideal for trade shows and exhibitions"}
+]
+}
+,{"type":"table","name":"main_service","database":"lfa","data":
+[
+
+]
+}
+]

@@ -1,0 +1,61 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<!-- Header Section -->
+<div class="contact-header text-center">
+    <div class="container">
+        <h1 class="display-4">Get in Touch</h1>
+        <p class="lead">We're here to assist you. Reach out for any inquiries or support.</p>
+    </div>
+</div>
+
+<!-- Contact Form Section -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="contact-form">
+                <h2>Contact Form</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <ul>
+                    <li><i class="fa fa-map-marker-alt"></i> Lot 2050, Jalan Swasta, Pending Industrial Estate, 93450 Kuching, Sarawak</li>
+                    <li><i class="fa fa-phone"></i> +6019-818 8326</li>
+                    <!--<li><i class="fa fa-envelope"></i> contact@example.com</li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Map Section -->
+<div class="map-section mt-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Location</h2>
+        <!-- Embed Google Map -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.3451789830874!2d110.38454487682291!3d1.5570287984284414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31fba72c2612cc57%3A0xb43751dc7f89d30c!2sLee%20Ming%20Press%20Sdn%20Bhd!5e0!3m2!1sen!2smy!4v1725957797417!5m2!1sen!2smy" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
+{% endblock %}
