@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data>
+        <!-- Create a custom form template for SPay -->
+        <template id="payment_spay_form" name="Spay Payment Form">
+            <t t-call="website.layout">
+                <div class="container mt-5">
+                    <h3>Payment via Spay</h3>
+                    <form method="POST" action="https://sandbox.spay.my/payment" id="spay_form">
+                        <input type="hidden" name="merchant_id" t-att-value="acquirer.spay_merchant_id"/>
+                        <input type="hidden" name="amount" t-att-value="amount"/>
+                        <input type="hidden" name="reference" t-att-value="reference"/>
+                        <input type="hidden" name="callback_url" t-att-value="acquirer.callback_url"/>
+                        <button type="submit" class="btn btn-primary">Pay Now</button>
+                    </form>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>
+

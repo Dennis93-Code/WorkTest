@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Creating payment provider SPay -->
+    <record id="payment_provider_spay" model="payment.provider">
+        <field name="name">SPay Payment</field>
+        <field name="code">spay</field>
+        <field name="image_128" type="base64"
+               file="spay_payment_gateway/static/src/img/spay.png"/>
+        <field name="payment_method_ids"
+                eval="[Command.set([ ref('spay_payment_gateway.payment_method_spay')])]"/>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="module_id" ref="base.module_spay_payment_gateway"/>
+        <!-- <field name="inline_form_view_id" ref="inline_form"/> -->
+    </record>
+</odoo>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Creating SPay payment method -->
+    <record id="payment_method_spay" model="payment.method">
+        <field name="name">SPay</field>
+        <field name="code">spay</field>
+         <field name="image" type="base64"
+               file="spay_payment_gateway/static/src/img/spay.png"/>
+        <field name="sequence">12</field>
+        <field name="support_tokenization">True</field>
+        <field name="support_express_checkout">False</field>
+        <field name="support_refund">partial</field>
+    </record>
+</odoo>
